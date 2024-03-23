@@ -1,0 +1,18 @@
+[Unit]
+Description=Disable USB controllers in /proc/acpi/wakeup
+# To be placed in /etc/systemd/system
+#
+#[[ $device == +([EX]HC*|PS2*|RP*) && $status == "*enabled" ]] && \ for multiple matches
+
+[Service]
+Type=oneshot
+ExecStart=bash -c '\
+    while read -r device _ status _; do \
+        [[ $device == RP05 && $status == "*enabled" ]] && \
+            echo $device > /proc/acpi/wakeup; \
+    done < /proc/acpi/wakeup; \
+    true \
+'
+
+[Install]
+WantedBy=multi-user.target

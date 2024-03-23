@@ -27,14 +27,42 @@ The configuration is highly dependent on **[pywal](https://github.com/dylanaraps
 <details>
   <summary style="font-weight:bold;font-size:18px;">General Read</summary>
 
-**If you are Reading this, you are probably interested in my dotfiles. I have a few things to say before you start using them.**
+**If you are Reading this, you are probably interested in my dotfiles.<br> I have a few things to say before you start using them.**
 
-    <center>
+> [!Note]
+> I use autologin via `~/.zprofile`
 
-> <small>**GTK**: adw-gtk3 (gradience for colors) **KDE/QT**: Kvantum (pywal theme) <br>
-> [nwg-look-bin,qt6ct] </small><br>
+```zsh
+# Ensures me getting auto logged in into Hyprland
+check() {
+command -v "$1" &>/dev/null
+}
 
-  </center>
+check center-align && {
+echo "$USER" | center-align
+}
+
+check Hyprland && {
+pgrep -x Hyprland &>/dev/null || Hyprland &>/dev/null
+} || {
+echo "Hyprland Not found will not launch it as GUI instance"
+}
+```
+
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+
+> <small>**GTK**: adw-gtk3 (gradience for colors) **KDE/QT**: Kvantum (pywal theme) <br> > [nwg-look-bin,qt6ct] </small><br>
+
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
+</p>
 
 - **Stow** : Stow is the tool i prefer to manage my dot files (i use `xstow` to be exact but it shouldn't matter).
 

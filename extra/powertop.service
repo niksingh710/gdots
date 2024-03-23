@@ -1,0 +1,12 @@
+[Unit]
+Description=Powertop tunings
+
+# To be placed in /etc/systemd/system/
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/powertop --auto-tune
+
+[Install]
+WantedBy=multi-user.target
