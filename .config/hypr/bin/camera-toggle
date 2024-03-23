@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+state="$(lsmod | grep uvcvideo)"
+
+[ -z "$state" ] && {
+  notify-send "Enabling camera module: uncvideo" "If fails to work check root permissions"
+  sudo modprobe -a uvcvideo
+} || {
+  notify-send "Disabling camera module: uncvideo" "If fails to work check root permissions"
+  sudo rmmod -f uvcvideo
+}
+
+# refreshes waybar module
+pkill -RTMIN+3 waybar

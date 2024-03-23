@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+check() {
+  command -v "$1" >/dev/null 2>&1
+}
+
+notify() {
+  check notify-send && notify-send "$@" || echo "$@"
+}
+
+check hyprctl || {
+  notify "hyprctl not found"
+  exit 1
+}
+
+mon_count=$(hyprctl monitors -j | jq ". | length")
+
+# Exit if only one monitor is connected
+if [ "$mon_count" -eq 1 ]; then
+  exit 0
+fi
+
+mapfile -t workspaces_on_primary < <(seq 1 9)
+workspaces_on_secondary=(10)
+
+primary=$(hyprctl monitors -j | jq ".[] | select(.id == 1) | .name")
+secondary=$(hyprctl monitors -j | jq ".[] | select(.id == 0) | .name")
+
+primary=$(echo "$primary" | tr -d '"')
+secondary=$(echo "$secondary" | tr -d '"')
+
+for i in "${workspaces_on_primary[@]}"; do
+  hyprctl dispatch moveworkspacetomonitor "$i" "$primary"
+done
+for i in "${workspaces_on_secondary[@]}"; do
+  hyprctl dispatch moveworkspacetomonitor "$i" "$secondary"
+done
+
+hyprctl dispatch workspace 1
+hyprctl dispatch focusmonitor "$primary"

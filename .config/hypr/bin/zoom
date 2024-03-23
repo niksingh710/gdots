@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+check() {
+  command -v "$1" >/dev/null 2>&1
+}
+
+notify() {
+  check notify-send && notify-send "Zoom" "$1" || echo "$1"
+}
+check bc || {
+  notify "bc not available"
+  exit 1
+}
+
+check jq || {
+  notify "jq not available"
+  exit 1
+}
+
+current_zoom_size() {
+  hyprctl getoption misc:cursor_zoom_factor -j | jq '.float'
+}
+
+# Args handler
+getargs() {
+  # shellcheck disable=SC2015
+  if [ -n "$1" ]; then
+    zoom_curr=$(current_zoom_size)
+    zoom_value="$(echo "$zoom_curr" + "$1" | bc)"
+    hyprctl keyword misc:cursor_zoom_factor "$zoom_value"
+  else
+    hyprctl keyword misc:cursor_zoom_factor "1.0"
+  fi
+}
+getargs "$@"
+# vim: ft=sh

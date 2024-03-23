@@ -1,0 +1,122 @@
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    /* Resolution : 1920x1080 */
+    mainbox-spacing:             100px;
+    mainbox-margin:              100px 12%;
+    message-margin:              0px 400px;
+    message-padding:             15px;
+    message-border-radius:       100%;
+    listview-spacing:            50px;
+    element-padding:             55px 60px;
+    element-border-radius:       100%;
+
+    prompt-font:                 "MonoLisa Nerd Font Italic 64";
+    textbox-font:                "MonoLisa Nerd Font Mono 16";
+    element-text-font:           "feather 64";
+
+    background-window:           black/5%;
+    background-normal:           white/5%;
+    background-selected:         white/15%;
+    foreground-normal:           white;
+    foreground-selected:         white;
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  true;
+    cursor:                      "default";
+    background-color:            @background-window;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     @mainbox-spacing;
+    margin:                      @mainbox-margin;
+    background-color:            transparent;
+    children:                    [ "dummy", "inputbar", "listview", "message", "dummy" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    background-color:            transparent;
+    children:                    [ "dummy", "prompt", "dummy"];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+prompt {
+    enabled:                     true;
+    font:                        @prompt-font;
+    background-color:            transparent;
+    text-color:                  @foreground-normal;
+}
+
+/*****----- Message -----*****/
+message {
+    enabled:                     true;
+    margin:                      @message-margin;
+    padding:                     @message-padding;
+    border-radius:               @message-border-radius;
+    background-color:            @background-normal;
+    text-color:                  @foreground-normal;
+}
+textbox {
+    font:                        @textbox-font;
+    background-color:            transparent;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    expand:                      false;
+    columns:                     5;
+    lines:                       1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     @listview-spacing;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    padding:                     @element-padding;
+    border-radius:               @element-border-radius;
+    background-color:            @background-normal;
+    text-color:                  @foreground-normal;
+    cursor:                      pointer;
+}
+element-text {
+    font:                        @element-text-font;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+element selected.normal {
+    background-color:            @background-selected;
+    text-color:                  @foreground-selected;
+}

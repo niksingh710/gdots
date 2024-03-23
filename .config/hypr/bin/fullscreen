@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+check() {
+  command -v "$1" &>/dev/null
+}
+
+notify() {
+  check notify-send && notify-send "$@" || echo "$@"
+}
+
+check jq || {
+  notify "Install jq first"
+  exit 1
+}
+
+fullscreenmode="$(hyprctl activewindow -j | jq '.fullscreenMode')"
+
+if [ "$fullscreenmode" -eq "1" ]; then
+  hyprctl --batch "dispatch fullscreen none; dispatch fullscreen none"
+else
+  hyprctl dispatch fullscreen 1
+fi

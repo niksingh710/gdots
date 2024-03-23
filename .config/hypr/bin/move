@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+# This script is used to move the active window or the active floating window
+# will move the tiled window in the direction
+# and the floating window by the value of val
+
+_curr_win_state=$(hyprctl activewindow -j | jq -r '.floating')
+val=50
+
+getVal() {
+  case "$1" in
+  "r")
+    echo "$val 0"
+    ;;
+  "d")
+    echo "0 $val"
+    ;;
+  "l")
+    echo "-$val 0"
+    ;;
+  "u")
+    echo "0 -$val"
+    ;;
+  esac
+}
+
+if [ $# -eq 0 ]; then
+  echo "No arguments provided"
+  exit 1
+fi
+
+if [[ $_curr_win_state == "true" ]]; then
+  # shellcheck disable=SC2046
+  hyprctl dispatch moveactive $(getVal "$1")
+else
+  hyprctl dispatch movewindow "$1"
+fi

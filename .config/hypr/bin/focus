@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# This scripts hijacks the focus movement and makes it cycle through the windows
+# It will switch between focus of tiled window while cycling through the floating windows
+
+[ $# -eq 0 ] && {
+  echo "invalid move"
+}
+
+[ "$1" = "cyclenext" ] && {
+  arg="none"
+  [ -z "$2" ] || arg="prev"
+  hyprctl dispatch cyclenext "$arg"
+  exit
+}
+
+if [[ "$1" =~ ^(l|r|u|d)$ ]]; then
+  if [ "$(hyprctl activewindow -j | jq '.floating')" = true ]; then
+    arg=none
+    [[ "$1" =~ ^(l|u)$ ]] && arg='prev'
+    hyprctl dispatch cyclenext "$arg"
+    hyprctl dispatch bringactivetotop none
+  else
+    hyprctl dispatch movefocus "$1"
+    hyprctl dispatch bringactivetotop none
+  fi
+fi

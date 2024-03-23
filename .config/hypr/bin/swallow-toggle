@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+state="$(hyprctl getoption misc:enable_swallow -j | jq '.int')"
+
+[ $state -eq 0 ] && {
+  hyprctl keyword misc:enable_swallow true
+  rex=$(hyprctl getoption misc:swallow_regex -j | jq '.str')
+  notify-send "Enabled Swallow" "on: $rex"
+} || {
+  hyprctl keyword misc:enable_swallow false
+  notify-send "Disabled Swallow"
+}

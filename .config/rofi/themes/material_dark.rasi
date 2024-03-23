@@ -1,0 +1,29 @@
+* {
+    background-color: #21202580;
+    border-color: #00000000;
+    text-color: #EFEFEF;
+    font: "GoogleSans Nerd Font 12";
+}
+
+#element selected {
+    background-color: #FEC045FF;
+}
+
+#element-text selected {
+	text-color: #212025FF;
+}
+
+#entry {
+    background-color: #00000000;
+	color: #EFEFEFFF;
+}
+
+#prompt {
+    background-color: #00000000;
+	color: #EFEFEFFF;
+}
+ 
+#textbox-prompt-colon {
+    background-color: #00000000;
+	color: #EFEFEFFF;
+}

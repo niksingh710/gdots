@@ -1,0 +1,20 @@
+@import "./config.rasi"
+
+@theme "/dev/null"
+@import "../themes/colors.rasi"
+@import "../menu-conf.rasi"
+
+window {
+  location: south east;
+  width: 30%;
+  x-offset: 0%;
+  y-offset: 0;
+  height: 60%;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+listview, element, element selected, element-text, element-icon {
+  padding: 4px;
+  background-color: transparent;
+}

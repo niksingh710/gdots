@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+
+check() {
+  command -v "$1" &>/dev/null
+}
+
+notify() {
+  check notify-send && notify-send -u low -t 3000 "$1" || {
+    echo "$1"
+  }
+}
+
+check rofi || {
+  notify "Rofi not Found"
+  exit 1
+}
+
+killall -q rofi
+
+# Current Theme
+dir="$HOME/.config/rofi/"
+conf='powermenu-conf'
+
+# CMDs
+uptime="$(uptime -p | sed -e 's/up //g')"
+check hostname && ifhost=$(hostname) || ifhost=""
+
+# Options
+shutdown='󰐦'
+reboot='󰑓'
+lock=''
+suspend='󰒲'
+logout='󰿅'
+
+# Rofi CMD
+rofi_cmd() {
+  rofi -dmenu \
+    -p "Goodbye ${USER}" \
+    -mesg "Uptime $ifhost: $uptime" \
+    -config "${dir}"/"${conf}".rasi
+}
+
+# Pass variables to rofi dmenu
+run_rofi() {
+  echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown" | rofi_cmd
+}
+
+cleanup() {
+  # This is a function that will fix any error that occurs after logout login
+
+  # Rclone fuser drives needs to be unmounted before logout
+  mapfile -t mounted_rclones < <(grep fuse.rclone /etc/mtab | awk '{print $2}')
+  # mounted_rclones=($(grep fuse.rclone /etc/mtab | awk '{print $2}'))
+  printf '%s\n' "${mounted_rclones[@]}" | while IFS= read -r line; do
+    fusermount -uq "$line"
+  done
+  killall -q zellij
+  check tmux && tmux kill-server
+  killall -q tmux
+  killall -q swayidle
+  killall -q swww
+  check hyprctl && hyprctl dispatch exit none
+}
+
+logout_fn() {
+  cleanup
+  loginctl terminate-session "$(loginctl session-status | head -n 1 | awk '{print $1}')"
+  # pkill -KILL -u niksingh710
+}
+
+[[ $1 == "-l" ]] && logout_fn && exit 0
+
+# Actions
+chosen="$(run_rofi)"
+case ${chosen} in
+"$shutdown")
+  systemctl poweroff
+  ;;
+"$reboot")
+  systemctl reboot
+  ;;
+"$lock")
+  sleep .5s
+  loginctl lock-session
+  ;;
+"$suspend")
+  systemctl suspend
+  ;;
+"$logout")
+  logout_fn
+  ;;
+esac

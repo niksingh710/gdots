@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+check() {
+  command -v "$1" &>/dev/null
+}
+
+notify() {
+  check notify-send && notify-send -a "Hyprland IPC" "$@" || echo "$@"
+}
+
+check socat || {
+  notify "socat not available"
+  exit 1
+}
+
+bar() {
+  [ -f "$HOME/.local/bin/bar.sh" ] && "$HOME/.local/bin/bar.sh"
+}
+
+handle() {
+  echo "$line"
+  if [[ ${1:0:12} == "monitoradded" ]]; then
+    bar
+    "$HOME/.config/hypr/bin/monitor"
+  fi
+  if [[ ${1:0:14} == "monitorremoved" ]]; then
+    bar
+    "$HOME/.config/hypr/bin/monitor"
+  fi
+}
+
+socat - UNIX-CONNECT:/tmp/hypr/"$HYPRLAND_INSTANCE_SIGNATURE"/.socket2.sock | while read -r line; do handle "$line"; done

@@ -1,0 +1,16 @@
+themes {{
+  default {{
+    fg {foreground.rgb}
+    bg {background.rgb}
+    black {background.rgb}
+    red 227 63 76
+    green {active.rgb}
+    yellow 229 192 123
+    blue 97 175 239
+    magenta 198 120 221
+    cyan 86 182 194
+    white {inactive.rgb}
+    orange 216 133 76  
+  }}
+}}
+

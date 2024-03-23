@@ -1,0 +1,7 @@
+program_options:
+  tray: auto
+  menu: flat
+  automount: false
+  notify: true
+  file_manager: xdg-open
+  terminal: "foot"

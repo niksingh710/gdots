@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+check() {
+  command -v "$1" >/dev/null
+}
+
+notfiy() {
+  check notify-send && notify-send -a "Annotation" "$@" || echo "$@"
+}
+
+check swappy || {
+  notfiy "swappy not found"
+  exit 1
+}
+
+check wl-paste || {
+  notfiy "wl-paste not found"
+  exit 1
+}
+
+wl-paste | swappy -f - &>/dev/null || {
+  notfiy "swappy failed" "Maybe clipboard is not having a image as input"
+  exit 1
+}

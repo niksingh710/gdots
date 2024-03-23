@@ -1,0 +1,222 @@
+@import "./colors.css";
+* {
+  background: transparent;
+  border-radius: 8px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 12px;
+  color: @foreground;
+  transition: none;
+  box-shadow: none;
+}
+
+#waybar {
+  background: alpha(@background, 0.6);
+  border-radius: 0px;
+}
+
+window {
+  background: transparent;
+  border-radius: 0px;
+}
+
+tooltip,
+#tray menu {
+  background: alpha(@background, 0.9);
+  color: @active;
+  border: 1px solid shade(@background, 0.5);
+}
+
+@keyframes blink {
+  to {
+    background-color: alpha(red, 0.6);
+    color: @foreground;
+  }
+}
+@keyframes blink-blue {
+  to {
+    background-color: alpha(#7aa2f7, 0.6);
+    color: @foreground;
+  }
+}
+
+#tray,
+#clock,
+#custom-colorpicker,
+#custom-updates,
+#custom-weather,
+#custom-notifications,
+#custom-camera,
+#custom-github,
+#idle_inhibitor,
+#battery,
+#network,
+#backlight,
+#memory,
+#disk,
+#bluetooth,
+#custom-batterysaver,
+#gamemode,
+#pulseaudio,
+#cpu,
+#custom-cputemp,
+#custom-dinfo,
+#workspaces,
+#submap,
+#mpris,
+#cava,
+#window {
+  padding: 0px 2px;
+}
+
+#pulseaudio {
+  margin-right: 4px;
+}
+
+/* Right Border flat */
+#custom-colorpicker,
+#custom-dinfo,
+#cpu,
+#pulseaudio.mic,
+#memory {
+  border-radius: 8px 0 0 8px;
+}
+
+/* Left Border flat */
+#disk,
+#custom-cputemp,
+#custom-batterysaver,
+#pulseaudio,
+#idle_inhibitor {
+  border-radius: 0 8px 8px 0;
+}
+
+/* TOP {{{ */
+
+#custom-notifications,
+#custom-github,
+#gamemode,
+#custom-camera {
+  border-radius: 0px;
+  padding: 0 6px;
+}
+
+#window {
+  padding: 0px 16px;
+}
+
+#tray,
+#tray menu {
+  margin: 0 2px;
+}
+
+#custom-colorpicker {
+  padding: 0px 6px 0 8px;
+}
+
+#custom-updates {
+  /* color: #a6da95; */
+  border-radius: 8px;
+  margin-left: 8px;
+}
+
+#idle_inhibitor {
+  padding: 0 6px 0 6px;
+}
+
+#idle_inhibitor.activated {
+  color: @active;
+}
+#tray > .needs-attention {
+  /*background: shade(alpha(@foreground, 0.8), 0.5);*/
+  color: shade(@background, 0.5);
+}
+
+#workspaces button {
+  padding: 0 4px;
+  margin: 0;
+  border-radius: 0;
+}
+#workspaces button.urgent {
+  /* background: @active; */
+  /* color: @background; */
+  text-decoration: underline;
+  font-weight: bold;
+  /* animation-name: blink-blue; */
+  /* animation-duration: 1s; */
+  /* animation-timing-function: linear; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+}
+#workspaces button.active {
+  background: alpha(@active, 0.3);
+  color: @background;
+  -gtk-icon-transform: skew(14deg);
+}
+
+/* }}} */
+
+/* Bottom {{{ */
+
+#battery {
+  border-radius: 8px 0 0 8px;
+  color: @foreground;
+}
+
+#battery.warning:not(.charging),
+#battery.critical:not(.charging) {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#bluetooth.discoverable,
+#bluetooth.discovering,
+#bluetooth.pairable {
+  animation-name: blink-blue;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#custom-batterysaver.powersave {
+  color: #a6e3a1;
+}
+#custom-batterysaver.default {
+  color: @foreground;
+}
+#custom-batterysaver.performance {
+  color: #d78787;
+}
+
+#backlight {
+  /* color: #d78787; */
+  /* color: @active; */
+}
+
+#pulseaudio {
+  /* color: #7aa2f7; */
+}
+
+#pulseaudio.mic {
+  margin: 0;
+  /* color: #cca0e4; */
+}
+
+#network {
+  /* color: #a6e3a1; */
+}
+
+#disk {
+  /* color: #fab387; */
+}
+
+#memory {
+  /* color: #f2cdcd; */
+}
+
+#cpu {
+  /* color: #a784db; */
+}

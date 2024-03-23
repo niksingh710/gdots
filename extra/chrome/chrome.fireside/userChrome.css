@@ -1,0 +1,99 @@
+#nav-bar {
+  height: 40px;
+  flex-direction: row-reverse;
+}
+
+#nav-bar-overflow-button {
+  display: none;
+}
+
+hbox#nav-bar-customization-target {
+  margin-top: 3px !important;
+}
+
+#PanelUI-menu-button {
+  margin-top: 6px;
+}
+
+#urlbar {
+  --urlbar-height: 32px !important;
+  --urlbar-toolbar-height: 32px !important;
+}
+
+#back-button,
+#forward-button,
+#stop-reload-button {
+  display: none;
+}
+
+#downloads-button,
+#unified-extensions-button {
+  margin-top: -4px !important;
+}
+
+#navigator-toolbox {
+  width: 434px !important;
+  position: absolute !important;
+  z-index: 0;
+}
+
+:root:has(#sidebar-box:hover) #navigator-toolbox {
+  z-index: 9;
+}
+
+:root:has(#sidebar-box:hover) #sidebar-box {
+  z-index: 8;
+}
+
+:root:has(#sidebar-splitter:hover) #sidebar-box {
+  z-index: 8;
+}
+
+#PanelUI-menu-button {
+  padding-right: 0 !important;
+}
+
+#sidebar-splitter {
+  width: 37px !important;
+  z-index: -10;
+}
+
+toolbar#TabsToolbar {
+  display: none;
+}
+
+#sidebar-box {
+  position: absolute !important;
+  height: 100%;
+  width: 434px !important;
+  z-index: 1;
+  margin-top: 41px !important;
+}
+
+#appcontent {
+  z-index: 3;
+}
+
+#browser #sidebar-box:focus-within,
+#browser #sidebar-box:hover,
+#navigator-toolbox:hover ~ #browser #sidebar-box,
+#navigator-toolbox:focus-within ~ #browser #sidebar-box {
+  z-index: 8 !important;
+}
+
+#navigator-toolbox:hover,
+#navigator-toolbox:focus-within {
+  z-index: 9001 !important;
+}
+
+/* Hide sidebar title */
+#sidebar-header {
+  display: none;
+}
+
+@-moz-document url("about:home"),
+url("about:newtab") {
+  body {
+    background: url("wallpaper/wallpaper.jpg") center/cover no-repeat fixed !important;
+  }
+}

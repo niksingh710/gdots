@@ -1,0 +1,119 @@
+{
+  "name": "top-bar",
+  "position": "top",
+  "layer": "top",
+  "modules-left": [
+    "custom/dinfo",
+    "wlr/workspaces"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "custom/colorpicker",
+    "hyprland/submap",
+    "idle_inhibitor",
+    "custom/updates",
+    "gamemode",
+    "custom/github",
+    "custom/camera",
+    "custom/notifications",
+    "tray",
+    "custom/weather",
+    "custom/recorder"
+  ],
+  "custom/dinfo": {
+    "interval": 60,
+    "format": "  ",
+    "return-type": "json",
+    "exec": "~/.config/waybar/bin/dinfo"
+  },
+  "wlr/workspaces": {
+    "format": "{name}",
+    "active-only": false,
+    "on-click": "activate",
+    "sort-by-number": true
+  },
+  "hyprland/window": {
+    "format": "<span color='red'></span> {} <span color='red'></span>",
+    "separate-outputs": true
+  },
+  "hyprland/submap": {
+    "format": "Submap: {}",
+    "tooltip": false
+  },
+  "custom/colorpicker": {
+    "format": "{}",
+    "return-type": "json",
+    "interval": "once",
+    "exec": "$HOME/.config/waybar/bin/colpicker/colorpicker -j",
+    "on-click": "sleep 1 && $HOME/.config/waybar/bin/colpicker/colorpicker",
+    "signal": 1
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "tooltip-format-activated": "Idle Inhibitor is active",
+    "tooltip-format-deactivated": "Idle Inhibitor is not active",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "custom/updates": {
+    "format": "{}",
+    "interval": 3600,
+    "exec": "~/.config/waybar/bin/updatecheck",
+    "return-type": "json",
+    "exec-if": "exit 0",
+    "signal": 8
+  },
+  "gamemode": {
+    "hide-not-running": true,
+    "icon-spacing": 4,
+    "icon-size": 13,
+    "tooltip": true,
+    "tooltip-format": "Games running: {count}"
+  },
+  "custom/github": {
+    "format": "{}  ",
+    "return-type": "json",
+    "interval": 3600,
+    "exec": "$HOME/.config/waybar/bin/github.sh",
+    "on-click": "xdg-open https://github.com/notifications"
+  },
+  "custom/camera": {
+    "format": "{} ",
+    "interval": "once",
+    "exec": "[ -z \"$(lsmod | grep uvcvideo)\" ] && echo \"\nCamera Disabled\" || echo \"\"",
+    "on-click": "~/.config/hypr/bin/camera-toggle",
+    "signal": 3
+  },
+  "custom/notifications": {
+    "format": "<b>{}</b> ",
+    "exec": "~/.config/waybar/bin/not-dnd -j",
+    "on-click": "~/.config/waybar/bin/not-dnd",
+    "return-type": "json",
+    "interval": "once",
+    "signal": 2
+  },
+  "tray": {
+    "spacing": 15,
+    "icon-size": 16
+  },
+  "custom/weather": {
+    "format": "{}",
+    "tooltip": true,
+    "interval": 600,
+    "exec": "~/.config/waybar/bin/wttr.py",
+    "return-type": "json"
+  },
+  "custom/recorder": {
+    "format": "{}",
+    "interval": "once",
+    "exec": "echo ''",
+    "tooltip": "false",
+    "exec-if": "pgrep 'wf-recorder'",
+    "on-click": "exec $HOME/.config/waybar/bin/recorder",
+    "signal": 4
+  }
+}

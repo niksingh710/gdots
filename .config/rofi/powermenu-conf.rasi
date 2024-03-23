@@ -1,0 +1,10 @@
+@import "./config.rasi"
+@theme "powermenu.rasi"
+
+configuration {
+  kb-select-1: "l";
+  kb-select-2: "s";
+  kb-select-3: "e";
+  kb-select-4: "r";
+  kb-select-5: "S";
+}

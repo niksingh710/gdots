@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+check() {
+	command -v "$1" &>/dev/null
+}
+
+notify() {
+	check notify-send && notify-send "$@" || echo "$@"
+}
+
+check jq || {
+	notify "Install jq first"
+	exit 1
+}
+
+isGroup="$(hyprctl activewindow -j | jq '.grouped | length')"
+
+[ "$isGroup" -eq "0" ] && {
+	hyprctl dispatch togglegroup
+	notify "Group enabled"
+} || {
+	hyprctl dispatch submap "Group"
+	notify "Entered Submap"
+}

@@ -1,0 +1,54 @@
+@import "./config.rasi"
+@theme "/dev/null"
+@import "./themes/colors.rasi"
+
+
+configuration {
+  modi: "drun";
+  display-drun: "";
+  drun-display-format: "{name}";
+}
+
+* {
+  al: @inactive;
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  location: south west;
+  width: 265;
+  x-offset: 60;
+  y-offset: -10;
+  height: 70%;
+  spacing: 0;
+  children: [ box ];
+  border-radius: @radius;
+}
+
+box {
+  padding: 0.5em;
+  children: [ entry, listview ];
+}
+
+entry {
+  placeholder: "Search...";
+  padding: 0.5em;
+  expand: false;
+}
+
+element {
+  text-color: @al;
+  padding: 0em;
+}
+element selected {
+  text-color: @fg;
+}
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
+}
+
+listview, element, element selected, element-text, element-icon {
+  cursor: pointer;
+}

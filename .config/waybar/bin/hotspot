@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+test -d /proc/sys/net/ipv4/conf/ap0 && {
+	pgrep -x create_ap &>/dev/null && {
+		list="$(sudo create_ap --list-clients ap0)"
+		list=$(echo "$list" | sed -z 's/\n/\\n/g')
+	}
+
+	cat <<EOF
+  { "class": "connected", "text": " 󱜠", "tooltip": "Hotspot is running\n$list" }
+EOF
+} || {
+	cat <<EOF
+  { "class": "disconnected", "text": " 󱜡", "tooltip": "Hotspot is not running." }
+EOF
+}

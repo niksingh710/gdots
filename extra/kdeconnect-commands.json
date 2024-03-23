@@ -1,0 +1,62 @@
+[
+    {
+        "command": "~/.local/bin/brightness up",
+        "name": "brig + "
+    },
+    {
+        "command": "~/.local/bin/brightness down",
+        "name": "brig -"
+    },
+    {
+        "command": "loginctl lock-session",
+        "name": "lock"
+    },
+    {
+        "command": "~/.local/bin/powermenu -l",
+        "name": "logout"
+    },
+    {
+        "command": "systemctl reboot",
+        "name": "reboot"
+    },
+    {
+        "command": "systemctl poweroff",
+        "name": "shutdown"
+    },
+    {
+        "command": "systemctl suspend",
+        "name": "suspend"
+    },
+    {
+        "command": "playerctl play-pause",
+        "name": "toggle play"
+    },
+    {
+        "command": "loginctl unlock-session",
+        "name": "unlock"
+    },
+    {
+        "command": "~/.local/bin/volume up",
+        "name": "vol +"
+    },
+    {
+        "command": "~/.local/bin/volume down",
+        "name": "vol -"
+    },
+    {
+        "command": "~/.local/bin/volume mute",
+        "name": "vol mute"
+    },
+    {
+        "command": "hyprctl dispatch workspace e+1",
+        "name": "w+1"
+    },
+    {
+        "command": "hyprctl dispatch workspace e-1",
+        "name": "w-1"
+    },
+    {
+        "command": "",
+        "name": ""
+    }
+]

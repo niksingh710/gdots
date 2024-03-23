@@ -1,0 +1,32 @@
+text-color=#c0bfc0
+border-color=#657589
+background-color=#03020389
+progress-color=over #7b4053
+max-visible=5
+sort=-time
+layer=top
+anchor=bottom-right
+margin=0,10,10,0
+width=280
+height=200
+border-size=1
+border-radius=10
+text-alignment=center
+icons=1
+max-icon-size=64
+icon-path=/usr/share/icons/flattrcolor-dark/:/usr/share/icons/flattrcolor-dark/devices/scalable/
+default-timeout=3400
+ignore-timeout=0
+group-by=none
+invisible=0
+on-button-middle=exec makoctl menu -n "$id" rofi -dmenu -p 'Select action: '
+on-button-right=exec makoctl menu -n "$id" $HOME/Downloads/temp/test.sh
+#format=<b>%s</b>\n%b
+format=<span color="#A0A0A5" size="13pt" line_height="1.4"><b>%a</b></span>\n<span color="#9a9a9c"><i>%s</i></span>\n<tt>%b</tt>
+
+[mode=do-not-disturb]
+invisible=1
+on-notify=none
+
+[mode=silent]
+on-notify=none

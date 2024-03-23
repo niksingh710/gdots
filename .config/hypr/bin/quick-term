@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# This script will simply run foot terminal with foot-quick class so that hyprland can apply some rules too it
+# If quick term is active and unfocused will focuse it
+# if quick term is active and focused will kill it
+# if quick term is not active will create it with a zellij session named quick-term
+
+check() {
+  command -v "$1" &>/dev/null
+}
+
+notify() {
+  check notify-send && notify-send "$@" || echo "$@"
+}
+
+check foot || {
+  notify "foot is not installed"
+  exit 1
+}
+check tmux || {
+  notify "tmux is not installed"
+  exit 1
+}
+
+# shellcheck disable=SC2009
+_pid="$(ps -fu | grep "foot-quick" | grep -v "grep" | awk '{print $2}')"
+
+if [ -n "$_pid" ]; then
+  curr_focused="$(hyprctl activewindow -j | jq -r '.class')"
+  if [ "$curr_focused" = "foot-quick" ]; then
+    kill -9 "$_pid"
+  else
+    hyprctl dispatch focuswindow pid:"$_pid"
+  fi
+else
+  foot -a "foot-quick" sh -c "tmux new-session -A -s 'quick-term'" >/dev/null 2>&1 &
+  exit 0
+fi

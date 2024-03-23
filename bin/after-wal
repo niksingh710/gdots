@@ -1,0 +1,178 @@
+#!/usr/bin/env bash
+
+# This script is after `wal` script
+
+check() {
+  command -v "$1" &>/dev/null
+}
+
+notify() {
+  if check notify-send; then
+    setsid notify-send \
+      --hint=string:x-dunst-stack-tag:wallpaper \
+      --hint=string:synchronous:wallpaper \
+      -a "Wal" \
+      "$@" &>/dev/null
+  else
+    echo "$@"
+  fi
+}
+
+checks() {
+  [ ! -d "${HOME}/.cache/wal" ] && {
+    notify "Error: wal cache not found" "Run 'wal' first"
+    exit 1
+  }
+  check swww || {
+    notify "Error: 'swww' command not found" "Install 'swww' package"
+    exit 1
+  }
+
+  check convert || {
+    notify "Error: 'convert' command not found" "Install 'imagemagick' package"
+    exit 1
+  }
+}
+
+wal_template_dir="${XDG_CACHE_HOME:-$HOME/.cache}/wal"
+blur() {
+  convert \
+    -scale 10% \
+    -blur 0x2.5 \
+    -resize 1000% \
+    "$current_wallpaper" \
+    "$HOME/.cache/wal-blurr.png"
+}
+
+makoconfig() {
+  check mako || {
+    notify "Error: Mako not found" "Install 'mako' package"
+    return
+  }
+  conffile="$HOME/.config/mako/config"
+  dconffile="$HOME/.config/mako/config.default"
+
+  # add config file to .gitignore so that wal will generate config from config.default everytime
+  # declutters git
+
+  if [ -f "$dconffile" ]; then
+    cp "$dconffile" "$conffile"
+  else
+    notify "Error: Mako default config not found" "Make sure to check mako wal section in wiki"
+    return
+  fi
+
+  # Associative array, color name -> color code.
+  declare -A colors
+  colors=(
+    ["background-color"]="${background}89"
+    ["text-color"]="$foreground"
+    ["border-color"]="$color13"
+  )
+
+  for color_name in "${!colors[@]}"; do
+    # replace first occurance of each color in config file
+    sed -i "0,/^$color_name.*/{s//$color_name=${colors[$color_name]}/}" "$conffile"
+  done
+  # shellcheck disable=SC2154
+  sed -i \
+    "s/\(^format=.\{1,10\}color=\"\).\{4,9\}\(\".\{30,60\}color=\"\).\{4,9\}\(\".*\)/\1${color3}\2${cursor}\3/" \
+    "$conffile"
+
+  makoctl reload
+}
+
+theme() {
+  # This function places the theme files in their respective directories
+  # for kvantum, gradience and other applications
+  template=pywal # name of the theme file
+  theme=pywal    # name of the theme
+
+  config_dir="${XDG_CONFIG_HOME:-$HOME/.config}"
+  gradience_dir="$config_dir/presets/user/"
+
+  kvantum_dir="$config_dir/Kvantum"
+  kvtheme_dir="$kvantum_dir/${theme}"
+
+  mkdir -p "$gradience_dir" "$kvantum_dir" "$kvtheme_dir"
+
+  ln -sf "$wal_template_dir/${template}.json" "${gradience_dir}/${theme}.json"
+
+  # copy kvantum theme
+  ln -sf "$wal_template_dir/${template}.kvconfig" "$kvtheme_dir/${theme}.kvconfig"
+  ln -sf "$wal_template_dir/${template}.svg" "$kvtheme_dir/${theme}.svg"
+
+  /usr/bin/cp "$wal_template_dir/kdeglobals" "$config_dir/kdeglobals"
+
+  check gradience-cli && gradience-cli apply -n $theme --gtk both || notify "Gradience" "Failed to apply pallete"
+  check kvantummanager && kvantummanager --set "$theme" || notify "Kvantum" "Failed to apply theme"
+}
+
+ffox() {
+  # firefox --setup
+  check fd || {
+    notify "Make sure fd is present"
+    return
+  }
+
+  loc=$(fd -tf "^bg$" "$HOME/.mozilla")
+  dir="$(dirname "$loc")"
+  /usr/bin/cp "$current_wallpaper" "$loc"
+  /usr/bin/cp "$current_wallpaper" "$dir/wallpaper.png"
+  if [ -f "$HOME/.cache/wal-blurr.png" ]; then
+    /usr/bin/cp "$HOME/.cache/wal-blurr.png" "$dir/wallpaper.png"
+  fi
+}
+
+bar() {
+  if [ -d "$HOME/.config/waybar" ] || mkdir -p "$HOME/.config/waybar"; then
+    /usr/bin/cp "$wal_template_dir/colors-waybar.css" "$HOME/.config/waybar/colors.css"
+  fi
+
+  if check bar.sh; then
+    bar.sh
+  else
+    killall waybar
+    setsid waybar &>/dev/null
+  fi
+}
+
+general() {
+  pgrep -x swww &>/dev/null || swww init &>/dev/null
+  check pywalfox && pywalfox update
+  check wal-telegram && wal-telegram --wal -r -g
+  check pywal-discord && pywal-discord
+  check tmux && tmux source-file "$HOME/.config/tmux/tmux.conf"
+  check hyprctl && hyprctl reload
+  ln -sf "$current_wallpaper" "$HOME/.wallpaper.png"
+
+  if [ -d "$HOME/.config/zathura" ] || mkdir -p "$HOME/.config/zathura"; then
+    /usr/bin/cp "$wal_template_dir/colors-zathura" "$HOME/.config/zathura/colors-zathura"
+  fi
+  if [ -d "$HOME/.config/btop/themes" ] || mkdir -p "$HOME/.config/btop/themes"; then
+    /usr/bin/cp "$wal_template_dir/colors-btop.theme" "$HOME/.config/btop/themes/pywal.theme"
+  fi
+  if [ -d "$HOME/.config/heroic-theme" ] || mkdir -p "$HOME/.config/heroic-theme/"; then
+    /usr/bin/cp "$wal_template_dir/heroic-theme.css" "$HOME/.config/heroic-theme/pywal.css"
+  fi
+  if [ -d "$HOME/.config/vimiv/styles/" ] || mkdir -p "$HOME/.config/vimiv/styles/"; then
+    /usr/bin/cp "$wal_template_dir/colors-vimiv.ini" "$HOME/.config/vimiv/styles/pywal"
+  fi
+}
+
+notify "After Wal" "Running..."
+
+# shellcheck disable=SC1091
+. "$HOME/.cache/wal/colors.sh"
+
+current_wallpaper="$(cat $HOME/.cache/wal/wal)"
+
+checks || notify "Error" "Checks failed"
+blur || notify "Error" "Blur failed"
+theme || notify "Error" "Theme failed"
+makoconfig || notify "Error" "Mako config failed"
+ffox || notify "Error" "Firefox failed"
+general || notify "Error" "General failed"
+bar || notify "Error" "Bar failed"
+
+notify "Wallpaper set" "Wallpaper has been set to $(basename $current_wallpaper)" -i "$current_wallpaper"

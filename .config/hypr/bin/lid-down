@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# This script will be executed on when the lid is switch on
+
+check() {
+  command -v "$1" &>/dev/null
+}
+
+notify() {
+  check notify-send && notify-send -u low -t 3000 "$1" || {
+    echo "$1"
+  }
+}
+
+check hyprctl || {
+  notify "hyprctl is not installed"
+  exit 1
+}
+
+mon_count=$(hyprctl monitors -j | jq '. | length')
+
+if [ "$mon_count" -eq 1 ]; then
+  state=$(awk '{print $2}' </proc/acpi/button/lid/LID*/state)
+  sleep 3
+  [ "$state" = "open" ] || {
+    systemctl suspend
+  }
+else
+  sleep 1
+  hyprctl keyword monitor "eDP-1, disable"
+fi

@@ -1,0 +1,70 @@
+/*-*- mode: css; -*-*/
+
+* {{
+  color0:		{color0};
+  color1:		{color1};
+  color2:		{color2};
+  color3:		{color3};
+  color4:		{color4};
+  color5:		{color5};
+  color6:		{color6};
+  color7:		{color7};
+  color8:		{color8};
+  color9:		{color9};
+  color10:	{color10};
+  color11:	{color11};
+  color12:	{color12};
+  color13:	{color13};
+  color14:	{color14};
+  color15:	{color15};
+  active:		{active};
+  inactive:	{inactive};
+
+  roundness:            {roundness}px;
+  radius:               {radius}px;
+
+  background:						@color0;
+  foreground:						@color15;
+
+  background-color:		  @background;
+  border-color:					@background;
+  separatorcolor:			  @color8;
+  scrollbar-handle:			@color9;
+
+  normal-background:	    			@background;
+  normal-foreground:		    		@foreground;
+  alternate-normal-background:	@background;
+  alternate-normal-foreground:	@foreground;
+  selected-normal-background:		@active;
+  selected-normal-foreground:		@foreground;
+
+  active-background:				    @inactive;
+  active-foreground:				    @foreground;
+  alternate-active-background:	@active;
+  alternate-active-foreground:	@foreground;
+  selected-active-background:		@active;
+  selected-active-foreground:		@foreground;
+
+  urgent-background:				    @color8;
+  urgent-foreground:				    @color15;
+  alternate-urgent-background:	@color8;
+  alternate-urgent-foreground:	@color15;
+  selected-urgent-background:		@color14;
+  selected-urgent-foreground:		@foreground;
+
+  /* theme-based-custom */ 
+
+  al:   {background}00;
+  bg:   {background}BF;
+  bga:  {background}FF;
+  fg:   {foreground}FF;
+  ac:   {color1};
+  se:   {color5}1A;
+  dbg:  {color0}02;
+
+}}
+
+configuration {{
+	font:							    "{font} 12";
+  icon-theme:           "{icontheme}";
+}}

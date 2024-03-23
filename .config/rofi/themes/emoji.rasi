@@ -1,0 +1,61 @@
+@import "colors.rasi"
+configuration {
+	display-emoji: "";
+	show-icons: false;
+	me-select-entry: "";
+	me-accept-entry: "MousePrimary";
+}
+
+* {
+	text-color: @fg;
+	background-color: @dbg;
+	border-color: #00000000;
+	width: 684px;
+	height: 477px;
+	location: 0;
+}
+
+inputbar {
+	border: 0 0 1px 0;
+	children: [prompt,entry];
+}
+
+prompt {
+	vertical-align: 0.5;
+	padding: 0px 9px 0px 9px;
+	border: 0 1px 0 0;
+}
+
+entry {
+	padding: 12px;
+}
+
+textbox {
+	background-color: @bg;
+	border-color: @bg;
+	padding: 13px 13px;
+}
+
+listview {
+	scrollbar: false;
+	columns: 5;
+	cycle: true;
+	dynamic: true;
+	layout: vertical;
+	padding: 4px 5px 5px 5px;
+}
+
+element-text {
+	font: "ComicCodeLigatures Nerd Font 27";
+	expand: false;
+	text-color: @dbg;
+	horizontal-align: 1;
+	vertical-align: 0.5;
+	margin: 0px 0px 0px 13px;
+	width: 1px;
+	padding: 1px 0px 16px;
+}
+
+element selected {
+	background-color: @ac;
+}

@@ -1,0 +1,166 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "modules-left": [
+    "battery",
+    "custom/batterysaver",
+    "memory",
+    "disk",
+    "cpu",
+    "custom/cputemp"
+  ],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "mpris",
+    "network",
+    "bluetooth",
+    "backlight",
+    "pulseaudio#mic",
+    "pulseaudio"
+  ],
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-charging": "<b>{icon} </b>",
+    "format-full": "<span color='#00ff00'><b>{icon}</b></span>",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "tooltip-format": "{timeTo}\n{capacity} % | {power} W"
+  },
+  "custom/batterysaver": {
+    "format": " {}",
+    "exec": "~/.config/waybar/bin/battsaver-toggle getdata",
+    "on-click": "~/.config/waybar/bin/battsaver-toggle save",
+    "on-click-right": "~/.config/waybar/bin/battsaver-toggle default",
+    "on-click-middle": "~/.config/waybar/bin/battsaver-toggle performance",
+    "interval": "once",
+    "return-type": "json",
+    "signal": 5
+  },
+  "memory": {
+    "format": " | {}% "
+  },
+  "disk": {
+    "interval": 600,
+    "format": " | {percentage_used}% ",
+    "path": "/"
+  },
+  "cpu": {
+    "format": " | {usage}% ",
+    "on-click": "foot btop"
+  },
+  "custom/cputemp": {
+    "format": " | {}",
+    "exec": "~/.config/waybar/bin/cputemp",
+    "interval": 10,
+    "return-type": "json"
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%A, %B %d, %Y (%R)}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
+  },
+  "mpris": {
+    "format": "{player_icon} {dynamic} |",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+    "ignored-players": ["youtube-music", "firefox", "kdeconnect"]
+  },
+  "network": {
+    "format-wifi": "  {bandwidthDownBits} |",
+    "format-ethernet": " {bandwidthDownBits} |",
+    "format-disconnected": " |",
+    "format-linked": " |",
+    "tooltip-format": "{ipaddr}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)   \n{ipaddr} | {frequency} MHz{icon} \n {bandwidthDownBits}  {bandwidthUpBits} ",
+    "tooltip-format-ethernet": "{ifname}  | \n{ipaddr} | {frequency} MHz{icon} \n {bandwidthDownBits}  {bandwidthUpBits} ",
+    "tooltip-format-disconnected": "Not Connected to any type of Network",
+    "on-click": "networkmanager_dmenu"
+  },
+  "bluetooth": {
+    "format-on": " |",
+    "format-off": " |",
+    "format-disabled": "",
+    "format-connected": "<b> {device_alias}</b> |",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}% |",
+    "tooltip-format": "{controller_alias}: {controller_address}\n[{num_connections}] device connected",
+    "tooltip-format-connected": "{device_enumerate}\n{controller_alias}: {controller_address}\n[{num_connections}] device connected",
+    "tooltip-format-enumerate-connected": "{device_alias}: {device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}: {device_address}: {device_battery_percentage}%",
+    "on-click": "rofi-bluetooth"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon} |",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "on-scroll-down": "brightnessctl s 5%-",
+    "on-scroll-up": "brightnessctl s +5%",
+    "smooth-scrolling-threshold": 1
+  },
+  "pulseaudio#mic": {
+    "format": "{format_source}",
+    "format-source": "{volume}%  |",
+    "format-source-muted": " |",
+    "on-click": "pactl set-source-mute 0 toggle",
+    "on-scroll-down": "pactl set-source-volume 0 -1%",
+    "on-scroll-up": "pactl set-source-volume 0 +1%"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} ",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-muted": " |",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "on-click": "~/.config/hypr/bin/audio-channel",
+    "on-click-middle": "pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+    "smooth-scrolling-threshold": 1
+  }
+}

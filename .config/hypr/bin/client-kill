@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+hash rofi 2>/dev/null || exit
+
+killall -q rofi && exit
+
+clients() {
+  hyprctl clients -j | jq -r '.[]
+  | select(.mapped==true) 
+  | select(.workspace.name | contains("special") | not)
+  | .class + " - " + (.pid|tostring) + " - " + .title'
+}
+
+out=$(clients |
+  rofi -dmenu -p "Kill:" |
+  awk '{print $3}')
+
+[ -z "$out" ] || kill -9 "$out" && echo "none selected"
+
+# vim: ft=sh

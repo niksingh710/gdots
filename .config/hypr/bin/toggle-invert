@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+check() {
+	command -v "$1" >/dev/null 2>&1
+}
+
+notify() {
+	check notify-send && {
+		notify-send "$@"
+	}
+	echo "$@"
+}
+
+status="$(hyprctl dispatch invertactivewindow)"
+
+if ! [[ "$status" =~ "ok" ]]; then
+	notify "Failed to invert active window" "check if plugin is installed"
+	exit 1
+fi

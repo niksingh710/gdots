@@ -1,0 +1,2 @@
+@import "./config.rasi"
+@theme "dmenu.rasi"

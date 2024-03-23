@@ -1,0 +1,51 @@
+term=xterm-256color
+
+font={fontmono}:size=10:fontfeatures=calt:fontfeatures=dlig:fontfeatures=liga,termicons:size=10,termicons:size=10
+# font={fontmono}:size=10,termicons:size=10
+dpi-aware=no
+
+pad=10x0 center
+
+[url]
+launch=xdg-open ${{url}}
+# label-letters=sadfjklewcmpgh
+osc8-underline=url-mode
+protocols=http, https, ftp, ftps, file, gemini, gopher
+uri-characters=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.,~:;/?#@!$&%*+="'()[]
+
+[cursor]
+style=beam
+color=ffffff {active.strip}
+blink=yes
+
+[colors]
+alpha=1
+foreground={foreground.strip}
+background={background.strip}
+
+## Normal/regular colors (color palette 0-7)
+regular0={color0.strip}  # black
+regular1={color1.strip}  # red
+regular2={color2.strip}  # green
+regular3={color3.strip}  # yellow
+regular4={color4.strip}  # blue
+regular5={color5.strip}  # magenta
+regular6={color6.strip}  # cyan
+regular7={color7.strip}  # white
+
+## Bright colors (color palette 8-15)
+bright0={color8.strip}   # bright black
+bright1={color9.strip}   # bright red
+bright2={color10.strip}   # bright green
+bright3={color11.strip}   # bright yellow
+bright4={color12.strip}   # bright blue
+bright5={color13.strip}   # bright magenta
+bright6={color14.strip}   # bright cyan
+bright7={color15.strip}   # bright white
+
+[key-bindings]
+scrollback-up-line=Control+Shift+k
+scrollback-down-line=Control+Shift+j
+spawn-terminal=Control+Shift+n
+
+# vim: ft=dosini

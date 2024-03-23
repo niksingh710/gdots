@@ -1,0 +1,17 @@
+@import "./config.rasi"
+
+@theme "/dev/null"
+@import "../themes/colors.rasi"
+@import "../menu-conf.rasi"
+
+window {
+  location: north east;
+  width: 8%;
+  x-offset: -12%;
+  y-offset: 0;
+  height: 10em;
+}
+
+listview, element, element selected, element-text, element-icon {
+  padding: 4px 0px;
+}

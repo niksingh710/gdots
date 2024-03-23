@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+# This script will open nsxiv and set the last selected image as the wallpaper
