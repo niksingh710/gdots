@@ -115,12 +115,15 @@ echo "Hyprland Not found will not launch it as GUI instance"
 ##### Required:
 
 ```bash
-yay -S hyprland hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland \
+yay -S hyprland hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland hyprshade \
   gradience waybar rofi-lbonn-wayland-git libnotify mako \
   jq slurp grim grimblast-git hyprland-scratchpad-git xstow firefox firefox-pwa-bin \
   foot unzip unrar nwg-look-bin qt6ct kvantum zathura vimiv networkmanager bluez-utils \
   brightnessctl pipewire pipewire-pulse
 ```
+
+> ![Note]
+> For hyrshade check out their documentation for -> [hyprshade](https://github.com/loqusion/hyprshade)
 
 ##### Optional but Recommended
 
