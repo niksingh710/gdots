@@ -122,7 +122,7 @@ yay -S hyprland hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland hyprsha
   brightnessctl pipewire pipewire-pulse
 ```
 
-> ![Note]
+> [!Note]
 > For hyrshade check out their documentation for -> [hyprshade](https://github.com/loqusion/hyprshade)
 
 ##### Optional but Recommended
