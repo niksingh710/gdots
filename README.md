@@ -174,7 +174,7 @@ Waybar get's started by a script `~/.local/bin/bar.sh` that switches it's output
 <details>
   <summary style="font-size: 20px; font-weight: bold;"> More Previews </summary>
 
-| <video height="1080" autoplay loop src="https://github.com/niksingh710/gdots/assets/60490474/7dbaf637-1ffd-4437-8eb2-489737ef6ee0">""</video> | Update Tooltip Preview\n ![image](https://github.com/niksingh710/gdots/assets/60490474/b55509a2-3cb2-4e32-9e73-62503689b2cf) |
+| <video height="1080" autoplay loop src="https://github.com/niksingh710/gdots/assets/60490474/7dbaf637-1ffd-4437-8eb2-489737ef6ee0">""</video> | Update Tooltip Preview ![image](https://github.com/niksingh710/gdots/assets/60490474/b55509a2-3cb2-4e32-9e73-62503689b2cf) |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 
 </details>
