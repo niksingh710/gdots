@@ -85,9 +85,11 @@ tooltip label {
   min-width: 22px;
   background: alpha(darker(@active), 0.3);
 }
+
 #custom-notifications {
   padding-left: 4px;
 }
+
 #pulseaudio.bluetooth {
   padding-left: 6px;
 }
@@ -186,7 +188,25 @@ tooltip label {
 }
 
 #battery {
+  border-radius: 8px;
+  padding: 4px 0px;
   margin: 4px 2px 4px 2px;
+}
+
+#battery.discharging.warning {
+  animation-name: blink-yellow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#battery.discharging.critical {
+  animation-name: blink-red;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #clock {
@@ -236,6 +256,20 @@ tooltip label {
 @keyframes blink-active {
   to {
     background-color: @active;
+    color: @foreground;
+  }
+}
+
+@keyframes blink-red {
+  to {
+    background-color: #c64d4f;
+    color: @foreground;
+  }
+}
+
+@keyframes blink-yellow {
+  to {
+    background-color: #cf9022;
     color: @foreground;
   }
 }

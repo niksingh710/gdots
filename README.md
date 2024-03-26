@@ -119,11 +119,12 @@ yay -S hyprland hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland hyprsha
   gradience waybar rofi-lbonn-wayland-git libnotify mako \
   jq slurp grim grimblast-git hyprland-scratchpad-git xstow firefox firefox-pwa-bin \
   foot unzip unrar nwg-look-bin qt6ct kvantum zathura vimiv networkmanager bluez-utils \
-  brightnessctl pipewire pipewire-pulse
+  brightnessctl pipewire pipewire-pulse batify
 ```
 
 > [!Note]
 > For hyrshade check out their documentation for -> [hyprshade](https://github.com/loqusion/hyprshade)
+> For batify check out their documentation for -> [batify](https://github.com/Ventto/batify)
 
 ##### Optional but Recommended
 
