@@ -134,6 +134,7 @@ yay -S udiskie geoclue android-udev android-tools scrcpy networkmanager-dmenu-gi
 
 > [!Note]
 > Mako can be used as all configuration regarding pywal and waybar DND is available in the config.
+> Currently i am using swaync but i keep switching between mako and swaync.
 
 ### Setup
 
