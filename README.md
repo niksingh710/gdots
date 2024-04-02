@@ -116,7 +116,7 @@ echo "Hyprland Not found will not launch it as GUI instance"
 
 ```bash
 yay -S hyprland hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland hyprshade \
-  gradience waybar rofi-lbonn-wayland-git libnotify mako \
+  gradience waybar rofi-lbonn-wayland-git libnotify swaync \
   jq slurp grim grimblast-git hyprland-scratchpad-git xstow firefox firefox-pwa-bin \
   foot unzip unrar nwg-look-bin qt6ct kvantum zathura vimiv networkmanager bluez-utils \
   brightnessctl pipewire pipewire-pulse batify
@@ -131,6 +131,9 @@ yay -S hyprland hyprlock hypridle hyprpicker xdg-desktop-portal-hyprland hyprsha
 ```bash
 yay -S udiskie geoclue android-udev android-tools scrcpy networkmanager-dmenu-git kdeconnect mpv
 ```
+
+> [!Note]
+> Mako can be used as all configuration regarding pywal and waybar DND is available in the config.
 
 ### Setup
 
@@ -176,7 +179,7 @@ Waybar get's started by a script `~/.local/bin/bar.sh` that switches it's output
   <summary style="font-size: 20px; font-weight: bold;"> More Previews </summary>
 
 | <video height="1080" autoplay loop src="https://github.com/niksingh710/gdots/assets/60490474/7dbaf637-1ffd-4437-8eb2-489737ef6ee0">""</video> | Update Tooltip Preview ![image](https://github.com/niksingh710/gdots/assets/60490474/b55509a2-3cb2-4e32-9e73-62503689b2cf) |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 
 </details>
 
