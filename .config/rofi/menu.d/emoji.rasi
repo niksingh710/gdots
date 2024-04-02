@@ -2,7 +2,7 @@
 
 window {
   location: center;
-  width: 30%;
+  width: 40%;
   x-offset: 0%;
   y-offset: 0;
   height: 50%;

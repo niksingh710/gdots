@@ -5,10 +5,10 @@
 @import "../menu-conf.rasi"
 
 window {
-  location: north east;
+  location: south east;
   width: 8%;
-  x-offset: -12%;
-  y-offset: 0;
+  x-offset: 0%;
+  y-offset: -20%;
   height: 10em;
 }
 

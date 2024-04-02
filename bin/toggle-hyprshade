@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+check() {
+  command -v "$1" 1>/dev/null
+}
+
+notify() {
+  check notify-send && {
+    notify-send -a "Hyprshade" "$@"
+    return
+  }
+  echo "$@"
+}
+
+if ! check hyprshade; then
+  notify "Hyprshade not found"
+fi
+
+current=$(hyprshade current)
+
+if [[ $1 == "status" ]]; then
+  if [ -z "$current" ]; then
+    cat <<-EOF
+    {"text": "󰈉", "tooltip": "Hyprshade off"}
+EOF
+  else
+    cat <<-EOF
+    {"text": "󰮔", "tooltip": "Hyprshade on"}
+EOF
+  fi
+  exit
+fi
+
+# Checks if current contains "on" or "off"
+if [[ $current == *blue-light-filter* ]]; then
+  hyprshade off
+  notify "Hyprshade off"
+else
+  hyprshade on blue-light-filter
+  notify "Hyprshade on"
+fi
+pkill -RTMIN+11 waybar

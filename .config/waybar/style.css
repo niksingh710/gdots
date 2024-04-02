@@ -92,6 +92,11 @@ tooltip label {
 
 #pulseaudio.bluetooth {
   padding-left: 6px;
+  padding-right: 8px;
+}
+
+#pulseaudio {
+  padding-right: 4px;
 }
 
 #custom-hotspot,

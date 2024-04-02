@@ -144,6 +144,12 @@ general() {
   check pywal-discord && pywal-discord
   check tmux && tmux source-file "$HOME/.config/tmux/tmux.conf"
   check hyprctl && hyprctl reload
+  check swaync && {
+    pgrep -x swaync && {
+      swaync-client -rs
+      swaync-client -R
+    }
+  }
   ln -sf "$current_wallpaper" "$HOME/.wallpaper.png"
 
   if [ -d "$HOME/.config/zathura" ] || mkdir -p "$HOME/.config/zathura"; then

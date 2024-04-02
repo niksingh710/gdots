@@ -205,6 +205,7 @@
       "custom/mark",
       "custom/weather",
       "custom/colorpicker",
+      "custom/hyprshade",
       "idle_inhibitor",
       "custom/hyprkill"
     ]
@@ -383,6 +384,15 @@
       "power-saver": "<span color='#a6e3a1'><small></small></span>"
     }
   },
+  "custom/hyprshade": {
+    "format": "{}",
+    "tooltip": true,
+    "signal": 11,
+    "exec": "toggle-hyprshade status",
+    "on-click": "toggle-hyprshade",
+    "return-type": "json"
+  },
+
   "custom/weather": {
     "format": "{}",
     "tooltip": true,
@@ -433,6 +443,7 @@
     "format": "<b>{}</b> ",
     "exec": "noti-cycle -j",
     "on-click": "noti-cycle",
+    "on-click-right": "noti-cycle rofi",
     "return-type": "json",
     "interval": "once",
     "signal": 2
