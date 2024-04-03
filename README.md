@@ -32,8 +32,7 @@ The configuration is highly dependent on **[pywal](https://github.com/dylanaraps
 
 **If you are Reading this, you are probably interested in my dotfiles.<br> I have a few things to say before you start using them.**
 
-> [!Note]
-> I use autologin via `~/.zprofile`
+> *I use autologin via `~/.zprofile`*
 
 ```zsh
 # Ensures me getting auto logged in into Hyprland
