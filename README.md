@@ -177,8 +177,8 @@ I have a keybind in my config that toggles it. `Super+b` -> `killall -SIGUSR1 wa
 
 Waybar get's started by a script `~/.local/bin/bar.sh` that switches it's output based on connected monitors.
 
-| ![image](https://github.com/niksingh710/gdots/assets/60490474/e6819215-54de-499d-bbd0-85742bdddf3f) | ![image](https://github.com/niksingh710/gdots/assets/60490474/2870a9e6-b6d6-4a07-8ab9-580858a6f628) | <video height="390" autoplay loop src="https://github.com/niksingh710/gdots/assets/60490474/7dbaf637-1ffd-4437-8eb2-489737ef6ee0"></video> |
-| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![image](https://github.com/niksingh710/gdots/assets/60490474/e6819215-54de-499d-bbd0-85742bdddf3f) | ![image](https://github.com/niksingh710/gdots/assets/60490474/2870a9e6-b6d6-4a07-8ab9-580858a6f628) |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 
 <details>
   <summary style="font-size: 20px; font-weight: bold;"> More Previews </summary>
