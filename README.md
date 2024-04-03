@@ -27,7 +27,6 @@ The configuration is highly dependent on **[pywal](https://github.com/dylanaraps
 <table>
 <tbody>
 <td style="background:#000000ee;">
-<div style="width:290px">
 <details>
   <summary style="font-weight:bold;font-size:18px;">General Read</summary>
 
@@ -107,7 +106,6 @@ echo "Hyprland Not found will not launch it as GUI instance"
   After executing stow you will find this command in you `~/.local/bin` dir.
 
 </details>
-</div>
 </td>
 </tbody>
 </table>
