@@ -26,7 +26,7 @@ The configuration is highly dependent on **[pywal](https://github.com/dylanaraps
 
 <table>
 <tbody>
-<td style="background:#000000ee">
+<td style="background:#000000ee; width:80%">
 
 <details>
   <summary style="font-weight:bold;font-size:18px;">General Read</summary>
