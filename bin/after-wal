@@ -46,7 +46,6 @@ blur() {
 
 makoconfig() {
   check mako || {
-    notify "Error: Mako not found" "Install 'mako' package"
     return
   }
   conffile="$HOME/.config/mako/config"
@@ -176,9 +175,9 @@ current_wallpaper="$(cat $HOME/.cache/wal/wal)"
 checks || notify "Error" "Checks failed"
 blur || notify "Error" "Blur failed"
 theme || notify "Error" "Theme failed"
-makoconfig || notify "Error" "Mako config failed"
 ffox || notify "Error" "Firefox failed"
 general || notify "Error" "General failed"
 bar || notify "Error" "Bar failed"
+makoconfig
 
 notify "Wallpaper set" "Wallpaper has been set to $(basename $current_wallpaper)" -i "$current_wallpaper"
