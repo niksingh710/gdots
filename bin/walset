@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+check() {
+  command -v "$1" >/dev/null
+}
+
+check wal || {
+  echo "wal is not installed"
+  exit 1
+}
+
+arg="$HOME/.wallpapers"
+[ -n "$1" ] && arg="$1"
+
+wal \
+  -a 92 \
+  --cols16 darken \
+  --recursive \
+  -o after-wal \
+  -i "$arg"

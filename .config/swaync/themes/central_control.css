@@ -24,7 +24,6 @@
   background: alpha(@background, 0.35);
   border: 2px solid @color6;
   border-radius: 8px;
-  box-shadow: 0 2px 8px 0 @background;
   margin: 8px;
   padding: 4px;
 }
@@ -168,7 +167,6 @@ progressbar {
   font-size: initial;
   border-radius: 8px;
   border: 2px solid @color6;
-  box-shadow: none;
 }
 
 .widget-dnd>switch:hover {

@@ -1,5 +1,13 @@
 [
     {
+        "command": "hyprctl dispatch dpms off",
+        "name": "DPMS"
+    },
+    {
+        "command": "hyprctl dispatch dpms on",
+        "name": "DPMS on"
+    },
+    {
         "command": "~/.local/bin/brightness up",
         "name": "brig + "
     },
