@@ -140,7 +140,7 @@ general() {
   pgrep -x swww &>/dev/null || swww init &>/dev/null
   check pywalfox && pywalfox update
   check wal-telegram && wal-telegram --wal -r -g
-  check pywal-discord && pywal-discord
+  check pywal-discord && pywal-discord -p "$HOME/.config/vesktop/themes/"
   check tmux && tmux source-file "$HOME/.config/tmux/tmux.conf"
   check hyprctl && hyprctl reload
   check swaync && {
