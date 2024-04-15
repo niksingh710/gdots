@@ -92,7 +92,7 @@ tooltip label {
 
 #pulseaudio.bluetooth {
   padding-left: 6px;
-  padding-right: 8px;
+  padding-right: 0px;
 }
 
 #pulseaudio {
