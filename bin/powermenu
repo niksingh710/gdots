@@ -84,7 +84,13 @@ case ${chosen} in
   loginctl lock-session
   ;;
 "$suspend")
-  systemctl suspend
+  if pgrep -x create_ap; then
+    loginctl lock-session
+    sleep 1
+    hyprctl dispatch dpms off
+  else
+    systemctl suspend
+  fi
   ;;
 "$logout")
   logout_fn
