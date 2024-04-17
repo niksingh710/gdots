@@ -15,13 +15,20 @@
 }
 
 if [[ "$1" =~ ^(l|r|u|d)$ ]]; then
-  if [ "$(hyprctl activewindow -j | jq '.floating')" = true ]; then
+  floating=$(hyprctl activewindow -j | jq '.floating')
+  if [ "$floating" = true ]; then
     arg=none
     [[ "$1" =~ ^(l|u)$ ]] && arg='prev'
     hyprctl dispatch cyclenext "$arg"
-    hyprctl dispatch bringactivetotop none
+    floating=$(hyprctl activewindow -j | jq '.floating')
+    # Checks for if newly focused window is also floating
+    if [ "$floating" = true ]; then
+      pid=$(hyprctl activewindow -j | jq '.pid')
+      hyprctl dispatch alterzorder top,"pid:$pid"
+    fi
   else
     hyprctl dispatch movefocus "$1"
-    hyprctl dispatch bringactivetotop none
+    pid=$(hyprctl activewindow -j | jq '.pid')
+    hyprctl dispatch alterzorder top,"pid:$pid"
   fi
 fi

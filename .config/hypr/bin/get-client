@@ -25,9 +25,7 @@ out=$(
 
 [ -z "$out" ] || {
   hyprctl dispatch movetoworkspace "$_current_workspace,pid:$out" &>/dev/null
-  [ "$(hyprctl activewindow -j | jq '.floating')" = true ] && {
-    hyprctl dispatch bringactivetotop none &>/dev/null
-  }
+  hyprctl dispatch alterzorder top,"pid:$out" &>/dev/null
 }
 
 # vim: ft=sh

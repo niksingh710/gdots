@@ -17,9 +17,7 @@ out=$(echo "$1" | awk '{print $3}')
 [ -z "$out" ] || {
   killall -q rofi &>/dev/null
   hyprctl dispatch focuswindow "pid:$out"
-  [ "$(hyprctl activewindow -j | jq '.floating')" = true ] && {
-    hyprctl dispatch bringactivetotop none
-  }
+  hyprctl dispatch alterzorder top,"pid:$out"
 }
 exit 0
 # vim: ft=sh
