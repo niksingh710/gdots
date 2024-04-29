@@ -1,0 +1,12 @@
+{
+  "name": "minimal-dark",
+  "displayName": "Minimal Dark",
+  "theme": "ui",
+  "version": "0.0.1",
+  "description": "Clean and bold dark theme for Mailspring.",
+  "license": "MIT",
+  "engines": {
+    "mailspring": "*"
+  },
+  "private": true
+}

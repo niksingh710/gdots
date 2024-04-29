@@ -1,0 +1,293 @@
+@import 'variables';
+
+.btn-icon:hover img.content-mask {
+	background-color: @isaac-accent;
+}
+
+.composer-inner-wrap {
+	background: transparent;
+	border-radius: @base-border-radius;
+	input {
+		color: @white;
+		margin: 3px 9px !important;
+	}
+	textarea {
+		color: @white;
+	}
+	.composer-header-actions .action:hover {
+		color: @white;
+		img.content-mask {
+			background-color: @white;
+		}
+	}
+	.composer-header {
+		border-radius: @base-border-radius @base-border-radius 0 0;
+		.composer-participant-field {
+			color: @white;
+			&:after {
+				height: 0;
+				background: transparent;
+			}
+			.tokenizing-field-input {
+    		margin-left: 38px;
+			}
+			&.from-field {
+				span.from-single-name {
+					left: 1.5em !important;
+				}
+			}
+			.content-container {
+				border: none;
+				border-radius: @base-border-radius;
+				box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.3), 0 -0.5px 0 rgba(0, 0, 0, 0.3), 0.5px 0 0 rgba(0, 0, 0, 0.5), -0.5px 0 0 rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.3);
+				background: lighten(@isaac-dark, 10%);
+				color: @isaac-dark;
+				input, input[type='text'] {
+					background: lighten(@isaac-dark, 10%);
+					box-shadow: none !important;
+					border: none;
+					color: @white !important;
+					font-weight: 500;
+					text-indent: 5px;
+				}
+				.item {
+					color: @isaac-lighter;
+					padding-left: 15px;
+					&:hover {
+						background: lighten(@isaac-dark, 12%);
+						color: @white;
+						.category-item {
+							img.content-mask {
+								background-color: @white;
+							}
+						}
+					}
+					&.selected {
+						background: @isaac-accent;
+						color: @white;
+						.primary, .secondary {
+							color: @white;
+						}
+					}
+				}
+			}
+
+			//Signature button
+
+			.only-item {
+				background: transparent !important;
+				box-shadow: none;
+			}
+			.signature-button-dropdown .button-dropdown {
+				border: none !important;
+				.content-container {
+					border-radius: 0;
+					box-shadow: none;
+				}
+			}
+			.secondary-items {
+				background: lighten(@isaac-dark, 10%);
+				border-radius: @base-border-radius !important;
+				top: 40px;
+				.menu {
+					border-radius: @base-border-radius;
+					&:first-child {
+						border-top-left-radius: @base-border-radius;
+						border-top-right-radius: @base-border-radius;
+						border-bottom-left-radius: 0;
+						border-bottom-right-radius: 0;
+					}
+					&:last-child {
+						border-top-left-radius: 0;
+						border-top-right-radius: 0;
+						border-bottom-left-radius: @base-border-radius;
+						border-bottom-right-radius: @base-border-radius;
+					}
+					.header-container {
+						background: transparent;
+						border-bottom: none;
+						margin-right: 0;
+						.item {
+							border-top-left-radius: @base-border-radius;
+							border-top-right-radius: @base-border-radius;
+							border-bottom-left-radius: 0;
+							border-bottom-right-radius: 0;
+						}
+					}
+					.content-container {
+						.item {
+							border-radius: 0;
+						}
+					}
+					.footer-container {
+						border-top: none;
+						.item {
+							border-top-left-radius: 0;
+							border-top-right-radius: 0;
+							border-bottom-left-radius: @base-border-radius;
+							border-bottom-right-radius: @base-border-radius;
+						}
+					}
+					& > div {
+						border: none !important;
+					}
+					.item {
+						background: transparent;
+						color: @white;
+						margin-right: 0;
+						& > div {
+							img.content-mask {
+								background-color: @white !important;
+							}
+						}
+						&:hover {
+							background: @isaac-accent !important;
+							color: @white !important;
+							img.content-mask {
+								background-color: @white !important;
+							}
+						}
+					}
+					.item.checked {
+						background-image: none !important;
+					}
+				}
+			}
+			.participant .participant-primary {
+				color: @white;
+				font-weight: normal;
+			}
+		}
+	}
+	.composer-body-wrap {
+    border-top: 4px solid @isaac-dark;
+		padding: 0 20px 20px;
+		.quoted-text-control {
+			margin: 0 0 20px;
+		}
+		.attachments-area {
+			margin: 0 0 10px;
+		}
+	}
+	.composer-action-bar-wrap {
+		background: darken(@isaac-dark, 3%) !important;
+		box-shadow: none !important;
+		border: none;
+		.composer-action-bar-content {
+			.btn-toolbar {
+				border: 0 !important;
+			}
+		}
+		.composer-action-bar-content {
+			align-items: center;
+			padding: 15px 22px;
+			.btn-toolbar {
+				border: 0 !important;
+			}
+			// Send Button
+			.button-dropdown.bordered.btn-send.btn-emphasis.btn-text {
+		    border: 1px solid #fff;
+		    border-radius: 100px;
+		    height: 35px;
+		    padding: 6px 12px;
+			}
+			.button-dropdown {
+				padding-top: 0;
+				border: 1px solid darken(@isaac-light, 40%);
+				border-radius: @base-border-radius;
+				&.btn-emphasis .secondary-picker:active {
+					background: none;
+				}
+				&:hover
+					.primary-item {
+						&[title] {
+							color: @isaac-accent;
+						}
+						// img.content-mask {
+						// 	background-color: @isaac-accent !important;
+						// }
+					}
+			}
+			.btn.btn-toolbar:not(.btn-emphasis) img.content-mask {
+				background-color: @isaac-lighter;
+			}
+			.btn.btn-toolbar:hover:not(.btn-emphasis) img.content-mask {
+				background-color: @white;
+			}
+			.btn.btn-toolbar:not(.btn-emphasis).btn-enabled img.content-mask {
+				background-color: @isaac-accent !important;
+			}
+			.contenteditable-container {
+				spelling.misspelled {
+					background-image: linear-gradient(45deg, transparent, transparent 49%, rgba(255, 255, 255, 0.35) 49%, transparent 51%);
+				}
+			}
+		}
+	}
+	.composer-subject {
+		input {
+			padding: 15px 15px 5px;
+			font-weight: bold;
+			&:after {
+				height: 0;
+				background: transparent;
+			}
+		}
+		&after {
+			height: 0;
+			background: transparent
+		}
+	}
+}
+
+.composer-centered {
+	.composer-header {
+		padding-bottom: 10px;
+		padding: 10px 0;
+		.composer-participant-field:after,
+		.composer-subject:after {
+			background: transparent;
+		}
+		.collapsed-composer-participants {
+			border-color: darken(@isaac-dark, 2%) !important;
+		}
+		.composer-subject {
+			padding-bottom: 5px
+		}
+	}
+}
+
+.composer-full-window .composer-inner-wrap .composer-action-bar-wrap {
+	background: lighten(@isaac-dark, 3%);
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.tokenizing-field .token {
+	border: 1px solid darken(@isaac-light, 40%);
+	margin: 0 4px 0 0;
+		&.selected, &.dragging, &.invalid.selected, &.invalid.dragging {
+		border: 1px solid @white !important;
+	}
+}
+.tokenizing-field .token.invalid {
+	border: 1px solid @isaac-error;
+	margin-bottom: 0;
+}
+.tokenizing-field .tokenizing-field-input input {
+	padding: 0;
+}
+
+// Compose Popout
+.layout-mode-popout {
+	.composer-header {
+		border-bottom: 1px solid lighten(@isaac-dark, 2%);
+	}
+	.composer-body-wrap {
+		margin-top: 0;
+	}
+	.RichEditor-content {
+		padding-top: 20px
+	}
+
+}
