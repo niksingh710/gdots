@@ -28,10 +28,10 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  background: alpha(@background, .25);
-  border: 3px solid @color6;
-  border-radius: 8px;
-  margin: 8px;
+  background: alpha(@background, .35);
+  border: 1px solid @color6;
+  border-radius: 12px;
+  margin: 16px;
   padding: 0;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * {
-  min-height: 1rem;
+  min-height: 3.4em;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
@@ -86,7 +86,6 @@
   margin: 6px;
   padding: 2px;
   border-radius: 6px;
-  background-color: transparent;
   border: 1px solid transparent;
 }
 

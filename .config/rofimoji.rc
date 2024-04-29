@@ -1,5 +1,5 @@
 action = [copy, type]
-files = [all]
+files = [emoticons, emojis, kaomoji, nerd]
 skin-tone = moderate
 max-recent = 5
 selector = rofi

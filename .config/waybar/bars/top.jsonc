@@ -253,9 +253,9 @@
     "tooltip-format": "{volume}% {icon} | {desc}",
     "format-muted": "󰖁",
     "format-icons": {
-      "headphones": " ",
-      "handsfree": " ",
-      "headset": " ",
+      "headphones": "󰋌",
+      "handsfree": "󰋌",
+      "headset": "󰋌",
       "phone": "",
       "portable": "",
       "car": " ",

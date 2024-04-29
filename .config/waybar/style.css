@@ -3,6 +3,7 @@
 
 * {
   font-size: 16px;
+  font-family: "JetBrainsMono Nerd Font,JetBrainsMono NF";
   min-width: 8px;
   min-height: 0px;
   border: none;
@@ -82,21 +83,11 @@ tooltip label {
 #sound {
   border-radius: 4px;
   margin: 2px 2px 4px 2px;
-  min-width: 22px;
   background: alpha(darker(@active), 0.3);
 }
 
 #custom-notifications {
   padding-left: 4px;
-}
-
-#pulseaudio.bluetooth {
-  padding-left: 6px;
-  padding-right: 0px;
-}
-
-#pulseaudio {
-  padding-right: 4px;
 }
 
 #custom-hotspot,
