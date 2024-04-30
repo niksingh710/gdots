@@ -23,5 +23,5 @@ if [ -z "$count" ]; then
 fi
 
 cat <<EOF
-{"text":"","tooltip":"<b>Github: $count Notifications</b>"}
+{"text":"\n$count","tooltip":"<b>Github: $count Notifications</b>"}
 EOF

@@ -163,6 +163,10 @@ general() {
   if [ -d "$HOME/.config/vimiv/styles/" ] || mkdir -p "$HOME/.config/vimiv/styles/"; then
     /usr/bin/cp "$wal_template_dir/colors-vimiv.ini" "$HOME/.config/vimiv/styles/pywal"
   fi
+  if [ -d "$HOME/.config/qt5ct/colors/" ] || mkdir -p "$HOME/.config/qt5ct/colors/"; then
+    /usr/bin/cp "$wal_template_dir/qt5ct.conf" "$HOME/.config/qt5ct/colors/pywal.conf"
+  fi
+
 }
 
 notify "After Wal" "Running..."
