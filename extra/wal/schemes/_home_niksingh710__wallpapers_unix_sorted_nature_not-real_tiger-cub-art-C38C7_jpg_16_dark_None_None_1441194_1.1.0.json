@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/nature/not-real/tiger-cub-art-C38C7.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010201",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#010201",
+        "color1": "#454549",
+        "color2": "#7f4b25",
+        "color3": "#b3781e",
+        "color4": "#998147",
+        "color5": "#525867",
+        "color6": "#898273",
+        "color7": "#808080",
+        "color8": "#404140",
+        "color9": "#5C5C62",
+        "color10": "#AA6532",
+        "color11": "#EFA029",
+        "color12": "#CDAC5F",
+        "color13": "#6E768A",
+        "color14": "#B7AE9A",
+        "color15": "#bfbfbf"
+    }
+}

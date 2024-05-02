@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/nature/mountains/sunrise-mountain-416BF.png",
+    "alpha": "100",
+    "special": {
+        "background": "#000507",
+        "foreground": "#bfc0c1",
+        "cursor": "#bfc0c1"
+    },
+    "colors": {
+        "color0": "#000507",
+        "color1": "#a58684",
+        "color2": "#b1968c",
+        "color3": "#8a8b92",
+        "color4": "#b4a39a",
+        "color5": "#b0a8a5",
+        "color6": "#a0a5ab",
+        "color7": "#7f8283",
+        "color8": "#3f4345",
+        "color9": "#DCB3B1",
+        "color10": "#EDC8BB",
+        "color11": "#B8BAC3",
+        "color12": "#F0DACE",
+        "color13": "#EBE1DC",
+        "color14": "#D6DCE4",
+        "color15": "#bfc0c1"
+    }
+}

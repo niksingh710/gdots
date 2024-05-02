@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/wallflare-wall/gradient-abstract-hd-4k-digital-art-logo-minimalism-minimalist-wallpaper-bdqhk.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#050505",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#050505",
+        "color1": "#413951",
+        "color2": "#6f2a45",
+        "color3": "#0d7052",
+        "color4": "#069f5a",
+        "color5": "#1c546d",
+        "color6": "#3f4d6e",
+        "color7": "#828282",
+        "color8": "#434343",
+        "color9": "#574C6D",
+        "color10": "#94385D",
+        "color11": "#12966E",
+        "color12": "#09D578",
+        "color13": "#267092",
+        "color14": "#556793",
+        "color15": "#c0c0c0"
+    }
+}

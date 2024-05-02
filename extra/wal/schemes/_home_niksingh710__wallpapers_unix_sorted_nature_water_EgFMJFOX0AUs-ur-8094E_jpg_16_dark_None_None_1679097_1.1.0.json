@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/nature/water/EgFMJFOX0AUs-ur-8094E.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010203",
+        "foreground": "#bfbfc0",
+        "cursor": "#bfbfc0"
+    },
+    "colors": {
+        "color0": "#010203",
+        "color1": "#3f576a",
+        "color2": "#4f6c7c",
+        "color3": "#597d93",
+        "color4": "#747d81",
+        "color5": "#918e8a",
+        "color6": "#768a95",
+        "color7": "#808081",
+        "color8": "#404142",
+        "color9": "#54758E",
+        "color10": "#6A91A6",
+        "color11": "#77A7C4",
+        "color12": "#9BA7AC",
+        "color13": "#C2BEB9",
+        "color14": "#9EB9C7",
+        "color15": "#bfbfc0"
+    }
+}

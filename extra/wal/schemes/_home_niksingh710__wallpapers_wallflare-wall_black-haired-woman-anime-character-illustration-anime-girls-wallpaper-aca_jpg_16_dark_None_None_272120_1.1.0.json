@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/wallflare-wall/black-haired-woman-anime-character-illustration-anime-girls-wallpaper-aca.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010304",
+        "foreground": "#bfc0c0",
+        "cursor": "#bfc0c0"
+    },
+    "colors": {
+        "color0": "#010304",
+        "color1": "#203348",
+        "color2": "#223850",
+        "color3": "#3f4153",
+        "color4": "#20456c",
+        "color5": "#43506b",
+        "color6": "#215d90",
+        "color7": "#808181",
+        "color8": "#404242",
+        "color9": "#2B4560",
+        "color10": "#2E4B6B",
+        "color11": "#54576F",
+        "color12": "#2B5D90",
+        "color13": "#5A6B8F",
+        "color14": "#2D7DC0",
+        "color15": "#bfc0c0"
+    }
+}

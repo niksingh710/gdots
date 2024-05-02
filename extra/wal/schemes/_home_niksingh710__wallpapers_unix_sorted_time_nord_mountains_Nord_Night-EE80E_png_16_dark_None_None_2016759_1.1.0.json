@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/time/nord_mountains/Nord_Night-EE80E.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0c0f",
+        "foreground": "#c2c2c3",
+        "cursor": "#c2c2c3"
+    },
+    "colors": {
+        "color0": "#0b0c0f",
+        "color1": "#5f8590",
+        "color2": "#6e7e85",
+        "color3": "#648896",
+        "color4": "#878b93",
+        "color5": "#66909c",
+        "color6": "#8d9199",
+        "color7": "#858587",
+        "color8": "#48484b",
+        "color9": "#7FB2C1",
+        "color10": "#93A9B2",
+        "color11": "#86B6C8",
+        "color12": "#B4BAC4",
+        "color13": "#88C0D0",
+        "color14": "#BDC2CC",
+        "color15": "#c2c2c3"
+    }
+}

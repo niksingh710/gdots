@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/abstract?/niivu-abstractpack_42-63EC7.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#020101",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#020101",
+        "color1": "#222836",
+        "color2": "#362435",
+        "color3": "#123d4d",
+        "color4": "#6b1e16",
+        "color5": "#165669",
+        "color6": "#1b6c81",
+        "color7": "#808080",
+        "color8": "#414040",
+        "color9": "#2E3648",
+        "color10": "#483047",
+        "color11": "#195267",
+        "color12": "#8F281E",
+        "color13": "#1E738D",
+        "color14": "#2490AC",
+        "color15": "#bfbfbf"
+    }
+}

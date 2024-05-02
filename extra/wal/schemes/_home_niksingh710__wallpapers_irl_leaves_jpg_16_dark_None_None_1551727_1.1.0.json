@@ -1,0 +1,28 @@
+{
+    "checksum": "428155209232f65d992de5b1ea7c22ea",
+    "wallpaper": "/home/niksingh710/.wallpapers/irl/leaves.jpg",
+    "alpha": "92",
+    "special": {
+        "background": "#040507",
+        "foreground": "#c0c0c1",
+        "cursor": "#c0c0c1"
+    },
+    "colors": {
+        "color0": "#040507",
+        "color1": "#273f33",
+        "color2": "#195233",
+        "color3": "#275233",
+        "color4": "#37463c",
+        "color5": "#35543b",
+        "color6": "#286334",
+        "color7": "#818283",
+        "color8": "#424345",
+        "color9": "#345444",
+        "color10": "#226E45",
+        "color11": "#356E45",
+        "color12": "#4A5E51",
+        "color13": "#47714F",
+        "color14": "#368446",
+        "color15": "#c0c0c1"
+    }
+}

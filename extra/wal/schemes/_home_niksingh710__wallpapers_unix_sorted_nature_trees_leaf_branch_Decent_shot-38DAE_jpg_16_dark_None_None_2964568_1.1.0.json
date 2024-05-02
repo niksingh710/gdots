@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/nature/trees_leaf_branch/Decent_shot-38DAE.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030200",
+        "foreground": "#c0bfbf",
+        "cursor": "#c0bfbf"
+    },
+    "colors": {
+        "color0": "#030200",
+        "color1": "#4b3a19",
+        "color2": "#423e36",
+        "color3": "#6f4c1b",
+        "color4": "#764e2e",
+        "color5": "#947830",
+        "color6": "#a29175",
+        "color7": "#81807f",
+        "color8": "#42413f",
+        "color9": "#644E22",
+        "color10": "#585348",
+        "color11": "#946624",
+        "color12": "#9E693E",
+        "color13": "#C6A140",
+        "color14": "#D8C29D",
+        "color15": "#c0bfbf"
+    }
+}

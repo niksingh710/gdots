@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/aesthetic/red-forest.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030307",
+        "foreground": "#c0c0c1",
+        "cursor": "#c0c0c1"
+    },
+    "colors": {
+        "color0": "#030307",
+        "color1": "#5D284F",
+        "color2": "#5A475F",
+        "color3": "#9B0830",
+        "color4": "#E2122E",
+        "color5": "#9B2551",
+        "color6": "#E0254C",
+        "color7": "#c0c0c1",
+        "color8": "#424245",
+        "color9": "#5D284F",
+        "color10": "#5A475F",
+        "color11": "#9B0830",
+        "color12": "#E2122E",
+        "color13": "#9B2551",
+        "color14": "#E0254C",
+        "color15": "#c0c0c1"
+    }
+}

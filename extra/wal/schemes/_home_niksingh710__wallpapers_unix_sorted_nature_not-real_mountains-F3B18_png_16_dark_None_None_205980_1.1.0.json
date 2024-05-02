@@ -1,0 +1,28 @@
+{
+    "checksum": "18c175a219225fcc3f1aef05c92a9bf0",
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/nature/not-real/mountains-F3B18.png",
+    "alpha": "92",
+    "special": {
+        "background": "#0d0c15",
+        "foreground": "#c2c2c4",
+        "cursor": "#c2c2c4"
+    },
+    "colors": {
+        "color0": "#0d0c15",
+        "color1": "#a55151",
+        "color2": "#954d58",
+        "color3": "#544464",
+        "color4": "#574363",
+        "color5": "#654461",
+        "color6": "#6a4c68",
+        "color7": "#86858a",
+        "color8": "#49484f",
+        "color9": "#DC6C6C",
+        "color10": "#C76776",
+        "color11": "#705B86",
+        "color12": "#745A84",
+        "color13": "#875B82",
+        "color14": "#8E668B",
+        "color15": "#c2c2c4"
+    }
+}

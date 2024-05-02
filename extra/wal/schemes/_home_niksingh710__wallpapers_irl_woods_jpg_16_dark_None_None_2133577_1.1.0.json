@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/irl/woods.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#020201",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#020201",
+        "color1": "#514025",
+        "color2": "#2e3030",
+        "color3": "#454138",
+        "color4": "#67512a",
+        "color5": "#6b5438",
+        "color6": "#5c6157",
+        "color7": "#808080",
+        "color8": "#414140",
+        "color9": "#6C5632",
+        "color10": "#3E4041",
+        "color11": "#5D574B",
+        "color12": "#8A6C38",
+        "color13": "#8F714B",
+        "color14": "#7B8274",
+        "color15": "#bfbfbf"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/favs/cotn_vending.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010203",
+        "foreground": "#bfbfc0",
+        "cursor": "#bfbfc0"
+    },
+    "colors": {
+        "color0": "#010203",
+        "color1": "#223442",
+        "color2": "#253953",
+        "color3": "#657e39",
+        "color4": "#27446f",
+        "color5": "#355075",
+        "color6": "#274b9b",
+        "color7": "#808081",
+        "color8": "#404142",
+        "color9": "#2E4659",
+        "color10": "#324D6F",
+        "color11": "#87A84D",
+        "color12": "#355B94",
+        "color13": "#476B9C",
+        "color14": "#3565CF",
+        "color15": "#bfbfc0"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/tech-stuff/void/voidblue-593AE.png",
+    "alpha": "100",
+    "special": {
+        "background": "#01060a",
+        "foreground": "#bfc0c1",
+        "cursor": "#bfc0c1"
+    },
+    "colors": {
+        "color0": "#01060a",
+        "color1": "#74838a",
+        "color2": "#7f9ca5",
+        "color3": "#6d9bab",
+        "color4": "#86a2ab",
+        "color5": "#a0a4a5",
+        "color6": "#98a5ab",
+        "color7": "#808284",
+        "color8": "#404447",
+        "color9": "#9BAFB8",
+        "color10": "#AAD0DD",
+        "color11": "#92CFE5",
+        "color12": "#B3D8E5",
+        "color13": "#D6DBDD",
+        "color14": "#CBDDE4",
+        "color15": "#bfc0c1"
+    }
+}

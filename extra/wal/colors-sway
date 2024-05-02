@@ -1,0 +1,21 @@
+set $wallpaper /home/niksingh710/.wallpapers/gruvbox/wall_secondary.png
+
+set $background #191919
+set $foreground #c5c5c5
+
+set $color0 #191919
+set $color1 #3a3632
+set $color2 #582c1e
+set $color3 #423f39
+set $color4 #50473c
+set $color5 #634723
+set $color6 #5a5149
+set $color7 #8c8c8c
+set $color8 #525252
+set $color9 #4e4843
+set $color10 #763b28
+set $color11 #59554c
+set $color12 #6b5f51
+set $color13 #855f2f
+set $color14 #796d62
+set $color15 #c5c5c5

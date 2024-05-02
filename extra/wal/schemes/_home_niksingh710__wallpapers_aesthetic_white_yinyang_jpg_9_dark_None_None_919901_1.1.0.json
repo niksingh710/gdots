@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/aesthetic/white_yinyang.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010101",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#B0B0B0",
+        "color2": "#BFC0BF",
+        "color3": "#D0D0D0",
+        "color4": "#DFE0E0",
+        "color5": "#F4F5F4",
+        "color6": "#FBFBFB",
+        "color7": "#bfbfbf",
+        "color8": "#404040",
+        "color9": "#B0B0B0",
+        "color10": "#BFC0BF",
+        "color11": "#D0D0D0",
+        "color12": "#DFE0E0",
+        "color13": "#F4F5F4",
+        "color14": "#FBFBFB",
+        "color15": "#bfbfbf"
+    }
+}

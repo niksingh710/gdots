@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/favs/glasses_girl.jpg",
+    "alpha": "92",
+    "special": {
+        "background": "#050404",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#050404",
+        "color1": "#6c4b54",
+        "color2": "#595a67",
+        "color3": "#6f5a67",
+        "color4": "#7d727c",
+        "color5": "#90848d",
+        "color6": "#998b94",
+        "color7": "#828181",
+        "color8": "#434242",
+        "color9": "#916571",
+        "color10": "#77788A",
+        "color11": "#94788A",
+        "color12": "#A798A6",
+        "color13": "#C1B0BD",
+        "color14": "#CDBAC6",
+        "color15": "#c0c0c0"
+    }
+}

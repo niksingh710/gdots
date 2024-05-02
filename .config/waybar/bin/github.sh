@@ -22,6 +22,12 @@ if [ -z "$count" ]; then
   count="0"
 fi
 
-cat <<EOF
+if [ "$count" -gt 0 ]; then
+  cat <<EOF
 {"text":"\n$count","tooltip":"<b>Github: $count Notifications</b>"}
 EOF
+else
+  cat <<EOF
+{"text":"","tooltip":"<b>Github: $count Notifications</b>"}
+EOF
+fi

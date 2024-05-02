@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unixporn_wallpapers/street_wires-5C287.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#040506",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#040506",
+        "color1": "#655a51",
+        "color2": "#70635b",
+        "color3": "#645e61",
+        "color4": "#7e726a",
+        "color5": "#938b84",
+        "color6": "#9b948d",
+        "color7": "#818282",
+        "color8": "#424344",
+        "color9": "#87786D",
+        "color10": "#96857A",
+        "color11": "#867E82",
+        "color12": "#A8998E",
+        "color13": "#C5BAB1",
+        "color14": "#CFC6BC",
+        "color15": "#c0c0c0"
+    }
+}

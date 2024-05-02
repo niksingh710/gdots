@@ -1,0 +1,28 @@
+{
+    "checksum": "b36e19f0025d4de37d058d4a6a5bb4b6",
+    "wallpaper": "/home/niksingh710/.wallpapers/aesthetic/fantasy-woods.jpg",
+    "alpha": "92",
+    "special": {
+        "background": "#050507",
+        "foreground": "#c0c0c1",
+        "cursor": "#c0c0c1"
+    },
+    "colors": {
+        "color0": "#050507",
+        "color1": "#47484e",
+        "color2": "#754542",
+        "color3": "#8f433e",
+        "color4": "#635f5c",
+        "color5": "#876e4b",
+        "color6": "#4f5864",
+        "color7": "#828283",
+        "color8": "#434345",
+        "color9": "#5F6169",
+        "color10": "#9D5C59",
+        "color11": "#BF5A53",
+        "color12": "#847F7B",
+        "color13": "#B59365",
+        "color14": "#6A7686",
+        "color15": "#c0c0c1"
+    }
+}

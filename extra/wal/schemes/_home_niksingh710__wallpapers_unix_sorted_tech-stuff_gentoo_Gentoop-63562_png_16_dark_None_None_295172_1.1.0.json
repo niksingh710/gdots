@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/tech-stuff/gentoo/Gentoop-63562.png",
+    "alpha": "100",
+    "special": {
+        "background": "#020305",
+        "foreground": "#bfc0c0",
+        "cursor": "#bfc0c0"
+    },
+    "colors": {
+        "color0": "#020305",
+        "color1": "#6d596a",
+        "color2": "#645e93",
+        "color3": "#776d79",
+        "color4": "#746d84",
+        "color5": "#757ba8",
+        "color6": "#7896ba",
+        "color7": "#808182",
+        "color8": "#414243",
+        "color9": "#92778E",
+        "color10": "#867EC4",
+        "color11": "#9F92A2",
+        "color12": "#9B92B0",
+        "color13": "#9CA5E0",
+        "color14": "#A1C9F8",
+        "color15": "#bfc0c0"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/gifs/snow.gif",
+    "alpha": "100",
+    "special": {
+        "background": "#000203",
+        "foreground": "#bfbfc0",
+        "cursor": "#bfbfc0"
+    },
+    "colors": {
+        "color0": "#000203",
+        "color1": "#265370",
+        "color2": "#42677F",
+        "color3": "#2A5E81",
+        "color4": "#146A94",
+        "color5": "#1E739F",
+        "color6": "#2E6385",
+        "color7": "#bfbfc0",
+        "color8": "#3f4142",
+        "color9": "#265370",
+        "color10": "#42677F",
+        "color11": "#2A5E81",
+        "color12": "#146A94",
+        "color13": "#1E739F",
+        "color14": "#2E6385",
+        "color15": "#bfbfc0"
+    }
+}

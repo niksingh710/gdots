@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/aesthetic/vader.png",
+    "alpha": "100",
+    "special": {
+        "background": "#05070a",
+        "foreground": "#c0c1c1",
+        "cursor": "#c0c1c1"
+    },
+    "colors": {
+        "color0": "#05070a",
+        "color1": "#724955",
+        "color2": "#864f5a",
+        "color3": "#93505a",
+        "color4": "#425469",
+        "color5": "#8a5461",
+        "color6": "#506b81",
+        "color7": "#828384",
+        "color8": "#434547",
+        "color9": "#996272",
+        "color10": "#B36A79",
+        "color11": "#C46B78",
+        "color12": "#59708D",
+        "color13": "#B97182",
+        "color14": "#6B8FAC",
+        "color15": "#c0c1c1"
+    }
+}

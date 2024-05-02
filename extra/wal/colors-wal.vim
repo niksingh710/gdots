@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/niksingh710/.wallpapers/gruvbox/wall_secondary.png"
+let background = "#191919"
+let foreground = "#c5c5c5"
+let cursor     = "#c5c5c5"
+
+" Colors
+let color0  = "#191919"
+let color1  = "#3a3632"
+let color2  = "#582c1e"
+let color3  = "#423f39"
+let color4  = "#50473c"
+let color5  = "#634723"
+let color6  = "#5a5149"
+let color7  = "#8c8c8c"
+let color8  = "#525252"
+let color9  = "#4e4843"
+let color10 = "#763b28"
+let color11 = "#59554c"
+let color12 = "#6b5f51"
+let color13 = "#855f2f"
+let color14 = "#796d62"
+let color15 = "#c5c5c5"

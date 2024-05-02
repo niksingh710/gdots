@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/irl/cactus.png",
+    "alpha": "100",
+    "special": {
+        "background": "#010303",
+        "foreground": "#bfc0c0",
+        "cursor": "#bfc0c0"
+    },
+    "colors": {
+        "color0": "#010303",
+        "color1": "#33402c",
+        "color2": "#2c3b32",
+        "color3": "#2f4830",
+        "color4": "#354236",
+        "color5": "#3f4d3c",
+        "color6": "#4e5747",
+        "color7": "#808181",
+        "color8": "#404242",
+        "color9": "#45563B",
+        "color10": "#3B4F43",
+        "color11": "#3F6141",
+        "color12": "#475848",
+        "color13": "#546750",
+        "color14": "#69755F",
+        "color15": "#bfc0c0"
+    }
+}

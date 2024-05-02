@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unixporn_wallpapers/Radio_Sunset-B583C.jpg",
+    "alpha": "92",
+    "special": {
+        "background": "#040304",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#040304",
+        "color1": "#3a6625",
+        "color2": "#17645a",
+        "color3": "#15266f",
+        "color4": "#1e4969",
+        "color5": "#665762",
+        "color6": "#396666",
+        "color7": "#818181",
+        "color8": "#424242",
+        "color9": "#4E8832",
+        "color10": "#1F8679",
+        "color11": "#1D3395",
+        "color12": "#29628D",
+        "color13": "#897583",
+        "color14": "#4D8888",
+        "color15": "#c0c0c0"
+    }
+}

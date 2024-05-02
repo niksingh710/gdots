@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/media/starwars/stormtrooper-star-wars-gray-background-sim-EE62C.png",
+    "alpha": "100",
+    "special": {
+        "background": "#060606",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#060606",
+        "color1": "#777778",
+        "color2": "#858585",
+        "color3": "#878787",
+        "color4": "#8e8e90",
+        "color5": "#9f9f9f",
+        "color6": "#a7a7a8",
+        "color7": "#828282",
+        "color8": "#444444",
+        "color9": "#9F9FA1",
+        "color10": "#B2B2B2",
+        "color11": "#B4B4B4",
+        "color12": "#BEBEC1",
+        "color13": "#D4D4D5",
+        "color14": "#DFDFE0",
+        "color15": "#c0c0c0"
+    }
+}

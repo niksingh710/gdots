@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/anime/unknown-474F2.png",
+    "alpha": "100",
+    "special": {
+        "background": "#020202",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#020202",
+        "color1": "#4e6c87",
+        "color2": "#5b82a2",
+        "color3": "#5e8aaa",
+        "color4": "#7e7676",
+        "color5": "#9a8581",
+        "color6": "#8f9095",
+        "color7": "#808080",
+        "color8": "#414141",
+        "color9": "#6891B5",
+        "color10": "#7AAED9",
+        "color11": "#7EB9E3",
+        "color12": "#A99E9E",
+        "color13": "#CEB2AC",
+        "color14": "#BFC0C7",
+        "color15": "#bfbfbf"
+    }
+}

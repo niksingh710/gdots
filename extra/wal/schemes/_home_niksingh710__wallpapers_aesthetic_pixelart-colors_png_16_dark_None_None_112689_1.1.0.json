@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/aesthetic/pixelart-colors.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0b06",
+        "foreground": "#c2c2c0",
+        "cursor": "#c2c2c0"
+    },
+    "colors": {
+        "color0": "#0c0b06",
+        "color1": "#7b4a2f",
+        "color2": "#82811a",
+        "color3": "#ae7f1e",
+        "color4": "#6a7a57",
+        "color5": "#ac7b41",
+        "color6": "#6a905d",
+        "color7": "#858582",
+        "color8": "#484844",
+        "color9": "#A5633F",
+        "color10": "#AEAC23",
+        "color11": "#E8AA29",
+        "color12": "#8EA374",
+        "color13": "#E6A557",
+        "color14": "#8EC07C",
+        "color15": "#c2c2c0"
+    }
+}

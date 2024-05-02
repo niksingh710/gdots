@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/tech-stuff/arch/unknown-5ED59.png",
+    "alpha": "100",
+    "special": {
+        "background": "#02090b",
+        "foreground": "#bfc1c2",
+        "cursor": "#bfc1c2"
+    },
+    "colors": {
+        "color0": "#02090b",
+        "color1": "#14445d",
+        "color2": "#154661",
+        "color3": "#164a68",
+        "color4": "#185172",
+        "color5": "#1b597f",
+        "color6": "#1f618d",
+        "color7": "#808485",
+        "color8": "#414648",
+        "color9": "#1B5B7D",
+        "color10": "#1C5E82",
+        "color11": "#1E638B",
+        "color12": "#216C98",
+        "color13": "#2577AA",
+        "color14": "#2A82BC",
+        "color15": "#bfc1c2"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/aesthetic/4k-ai-mountain.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030305",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#030305",
+        "color1": "#70806E",
+        "color2": "#989A5B",
+        "color3": "#718F97",
+        "color4": "#8DAAB3",
+        "color5": "#CDBB9A",
+        "color6": "#99B8C4",
+        "color7": "#c0c0c0",
+        "color8": "#424243",
+        "color9": "#70806E",
+        "color10": "#989A5B",
+        "color11": "#718F97",
+        "color12": "#8DAAB3",
+        "color13": "#CDBB9A",
+        "color14": "#99B8C4",
+        "color15": "#c0c0c0"
+    }
+}

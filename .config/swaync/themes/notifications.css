@@ -17,7 +17,7 @@
   all: unset;
   font-size: 14px;
   font-family: "JetBrains Mono Nerd Font 10";
-  transition: 200ms;
+  /* transition: 200ms; */
 
 }
 

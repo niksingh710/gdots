@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/aesthetic/manga.png",
+    "alpha": "100",
+    "special": {
+        "background": "#060608",
+        "foreground": "#c0c0c1",
+        "cursor": "#c0c0c1"
+    },
+    "colors": {
+        "color0": "#060608",
+        "color1": "#857a45",
+        "color2": "#455462",
+        "color3": "#845675",
+        "color4": "#4e8893",
+        "color5": "#a37083",
+        "color6": "#937b8d",
+        "color7": "#828283",
+        "color8": "#444445",
+        "color9": "#B2A35C",
+        "color10": "#5D7083",
+        "color11": "#B1739C",
+        "color12": "#68B6C5",
+        "color13": "#DA96AF",
+        "color14": "#C5A5BC",
+        "color15": "#c0c0c1"
+    }
+}

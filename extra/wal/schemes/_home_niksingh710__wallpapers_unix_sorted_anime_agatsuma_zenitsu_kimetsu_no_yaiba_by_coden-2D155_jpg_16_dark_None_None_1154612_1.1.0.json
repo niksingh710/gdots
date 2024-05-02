@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/anime/agatsuma_zenitsu_kimetsu_no_yaiba_by_coden-2D155.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0605",
+        "foreground": "#c1c0c0",
+        "cursor": "#c1c0c0"
+    },
+    "colors": {
+        "color0": "#0a0605",
+        "color1": "#968149",
+        "color2": "#65576c",
+        "color3": "#877f67",
+        "color4": "#837887",
+        "color5": "#a28782",
+        "color6": "#bda564",
+        "color7": "#848282",
+        "color8": "#474443",
+        "color9": "#C8AC62",
+        "color10": "#877490",
+        "color11": "#B5AA8A",
+        "color12": "#AFA1B4",
+        "color13": "#D8B4AE",
+        "color14": "#FCDD86",
+        "color15": "#c1c0c0"
+    }
+}

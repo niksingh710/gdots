@@ -1,0 +1,28 @@
+{
+    "checksum": "9ae4a883ed24a87e836ee27b515ec8cc",
+    "wallpaper": "/home/niksingh710/.wallpapers/gruvbox/wall_secondary.png",
+    "alpha": "92",
+    "special": {
+        "background": "#050606",
+        "foreground": "#c0c0c0",
+        "cursor": "#c0c0c0"
+    },
+    "colors": {
+        "color0": "#050606",
+        "color1": "#3d3834",
+        "color2": "#4b443e",
+        "color3": "#534c44",
+        "color4": "#595248",
+        "color5": "#7f4420",
+        "color6": "#66594e",
+        "color7": "#828282",
+        "color8": "#434444",
+        "color9": "#524B46",
+        "color10": "#655B53",
+        "color11": "#6F665B",
+        "color12": "#776E61",
+        "color13": "#AA5B2B",
+        "color14": "#887768",
+        "color15": "#c0c0c0"
+    }
+}

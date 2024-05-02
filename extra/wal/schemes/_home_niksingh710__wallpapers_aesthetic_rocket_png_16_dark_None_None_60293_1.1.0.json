@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/aesthetic/rocket.png",
+    "alpha": "100",
+    "special": {
+        "background": "#08090c",
+        "foreground": "#c1c1c2",
+        "cursor": "#c1c1c2"
+    },
+    "colors": {
+        "color0": "#08090c",
+        "color1": "#9c6554",
+        "color2": "#96835d",
+        "color3": "#675a66",
+        "color4": "#787f6b",
+        "color5": "#7a8e69",
+        "color6": "#866a81",
+        "color7": "#838485",
+        "color8": "#454648",
+        "color9": "#D08770",
+        "color10": "#C8AF7D",
+        "color11": "#8A7889",
+        "color12": "#A0AA8F",
+        "color13": "#A3BE8C",
+        "color14": "#B38EAD",
+        "color15": "#c1c1c2"
+    }
+}

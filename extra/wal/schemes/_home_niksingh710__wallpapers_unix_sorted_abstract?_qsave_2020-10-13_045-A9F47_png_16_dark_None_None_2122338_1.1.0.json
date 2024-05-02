@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/abstract?/qsave_2020-10-13_045-A9F47.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0b041f",
+        "foreground": "#c2c0c7",
+        "cursor": "#c2c0c7"
+    },
+    "colors": {
+        "color0": "#0b041f",
+        "color1": "#1c618f",
+        "color2": "#267b8e",
+        "color3": "#1c6c92",
+        "color4": "#1c8298",
+        "color5": "#1c9e9f",
+        "color6": "#23b49b",
+        "color7": "#85818f",
+        "color8": "#484257",
+        "color9": "#2682BF",
+        "color10": "#33A4BE",
+        "color11": "#2690C3",
+        "color12": "#26AECB",
+        "color13": "#26D3D4",
+        "color14": "#2FF0CF",
+        "color15": "#c2c0c7"
+    }
+}

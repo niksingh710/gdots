@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/Downloads/kdeconnect/IMG_1081.JPG",
+    "alpha": "92",
+    "special": {
+        "background": "#020203",
+        "foreground": "#bfbfc0",
+        "cursor": "#bfbfc0"
+    },
+    "colors": {
+        "color0": "#020203",
+        "color1": "#34363a",
+        "color2": "#4e5153",
+        "color3": "#933c13",
+        "color4": "#aa7b2d",
+        "color5": "#265766",
+        "color6": "#366c73",
+        "color7": "#808081",
+        "color8": "#414142",
+        "color9": "#46494E",
+        "color10": "#686D6F",
+        "color11": "#C5511A",
+        "color12": "#E3A43C",
+        "color13": "#337489",
+        "color14": "#49909A",
+        "color15": "#bfbfc0"
+    }
+}

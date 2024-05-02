@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/abstract?/fakurian-design-PGdW_bHDbpI-unsplash-338AA.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#221915",
+        "foreground": "#c7c5c4",
+        "cursor": "#c7c5c4"
+    },
+    "colors": {
+        "color0": "#221915",
+        "color1": "#7c87a2",
+        "color2": "#6c6bad",
+        "color3": "#7384ae",
+        "color4": "#7a89a9",
+        "color5": "#8699a3",
+        "color6": "#80a2ac",
+        "color7": "#908c8a",
+        "color8": "#59524f",
+        "color9": "#A6B5D9",
+        "color10": "#918FE7",
+        "color11": "#9AB0E9",
+        "color12": "#A3B7E2",
+        "color13": "#B3CCDA",
+        "color14": "#ABD9E6",
+        "color15": "#c7c5c4"
+    }
+}

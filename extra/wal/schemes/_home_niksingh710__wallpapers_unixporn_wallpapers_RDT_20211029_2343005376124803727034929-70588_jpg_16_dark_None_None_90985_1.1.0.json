@@ -1,0 +1,28 @@
+{
+    "checksum": "9bebcd110180dcf6f3c9d9c9c16fc0b3",
+    "wallpaper": "/home/niksingh710/.wallpapers/unixporn_wallpapers/RDT_20211029_2343005376124803727034929-70588.jpg",
+    "alpha": "92",
+    "special": {
+        "background": "#040208",
+        "foreground": "#c0bfc1",
+        "cursor": "#c0bfc1"
+    },
+    "colors": {
+        "color0": "#040208",
+        "color1": "#3c1c39",
+        "color2": "#542142",
+        "color3": "#5b2648",
+        "color4": "#59314c",
+        "color5": "#670a42",
+        "color6": "#74144b",
+        "color7": "#818083",
+        "color8": "#424145",
+        "color9": "#50264C",
+        "color10": "#702C59",
+        "color11": "#7A3361",
+        "color12": "#774266",
+        "color13": "#8A0E58",
+        "color14": "#9B1B65",
+        "color15": "#c0bfc1"
+    }
+}

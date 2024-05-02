@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/kiku/geranimo-qzgN45hseN0-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#010403",
+        "foreground": "#bfc0c0",
+        "cursor": "#bfc0c0"
+    },
+    "colors": {
+        "color0": "#010403",
+        "color1": "#444d27",
+        "color2": "#1f2a33",
+        "color3": "#254136",
+        "color4": "#455139",
+        "color5": "#536642",
+        "color6": "#746c33",
+        "color7": "#808181",
+        "color8": "#404242",
+        "color9": "#5B6735",
+        "color10": "#2A3844",
+        "color11": "#325748",
+        "color12": "#5C6C4C",
+        "color13": "#6F8858",
+        "color14": "#9B9045",
+        "color15": "#bfc0c0"
+    }
+}

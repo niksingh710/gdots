@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unix_sorted/nature/sandy_shit/MacOS_Mojave_Day-B43AB.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0707",
+        "foreground": "#c1c1c1",
+        "cursor": "#c1c1c1"
+    },
+    "colors": {
+        "color0": "#0a0707",
+        "color1": "#5a5a63",
+        "color2": "#a18d68",
+        "color3": "#7084a1",
+        "color4": "#7b8ca4",
+        "color5": "#8492a6",
+        "color6": "#8897ab",
+        "color7": "#848383",
+        "color8": "#474545",
+        "color9": "#797884",
+        "color10": "#D7BC8B",
+        "color11": "#96B1D7",
+        "color12": "#A4BBDB",
+        "color13": "#B0C3DE",
+        "color14": "#B6CAE4",
+        "color15": "#c1c1c1"
+    }
+}

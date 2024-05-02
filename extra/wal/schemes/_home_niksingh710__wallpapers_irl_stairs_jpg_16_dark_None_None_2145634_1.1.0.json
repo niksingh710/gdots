@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/irl/stairs.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#050809",
+        "foreground": "#c0c1c1",
+        "cursor": "#c0c1c1"
+    },
+    "colors": {
+        "color0": "#050809",
+        "color1": "#2d4b34",
+        "color2": "#393b3b",
+        "color3": "#484b48",
+        "color4": "#69514c",
+        "color5": "#53674d",
+        "color6": "#66695a",
+        "color7": "#828384",
+        "color8": "#434546",
+        "color9": "#3D6446",
+        "color10": "#4C4F4F",
+        "color11": "#616561",
+        "color12": "#8C6D66",
+        "color13": "#6F8A67",
+        "color14": "#888D78",
+        "color15": "#c0c1c1"
+    }
+}

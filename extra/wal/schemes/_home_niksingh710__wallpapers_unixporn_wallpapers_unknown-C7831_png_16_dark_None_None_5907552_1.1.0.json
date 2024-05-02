@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unixporn_wallpapers/unknown-C7831.png",
+    "alpha": "100",
+    "special": {
+        "background": "#030402",
+        "foreground": "#c0c0bf",
+        "cursor": "#c0c0bf"
+    },
+    "colors": {
+        "color0": "#030402",
+        "color1": "#574f51",
+        "color2": "#723218",
+        "color3": "#655757",
+        "color4": "#6e605c",
+        "color5": "#665d62",
+        "color6": "#6f676c",
+        "color7": "#818180",
+        "color8": "#424241",
+        "color9": "#756A6D",
+        "color10": "#984320",
+        "color11": "#877575",
+        "color12": "#93817B",
+        "color13": "#897D83",
+        "color14": "#958A90",
+        "color15": "#c0c0bf"
+    }
+}

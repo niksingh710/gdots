@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/niksingh710/.wallpapers/unixporn_wallpapers/aperturescience-A8398.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#020202",
+        "foreground": "#bfbfbf",
+        "cursor": "#bfbfbf"
+    },
+    "colors": {
+        "color0": "#020202",
+        "color1": "#6c6c6c",
+        "color2": "#7b7b7b",
+        "color3": "#818181",
+        "color4": "#868686",
+        "color5": "#8c8c8c",
+        "color6": "#969696",
+        "color7": "#808080",
+        "color8": "#414141",
+        "color9": "#909090",
+        "color10": "#A4A4A4",
+        "color11": "#ADADAD",
+        "color12": "#B3B3B3",
+        "color13": "#BBBBBB",
+        "color14": "#C8C8C8",
+        "color15": "#bfbfbf"
+    }
+}
