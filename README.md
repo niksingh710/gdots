@@ -64,7 +64,7 @@ echo "Hyprland Not found will not launch it as GUI instance"
 </div>
 </p>
 
-- *Wal*: My most of the colors are generated from `pywal16` i have added templates but if you want to look at a generated file for reference, You can find that at `extra/wal` this is in the same format as it will be generated inside `~/.cache/wal`.
+- **Wal**: My most of the colors are generated from `pywal16` i have added templates but if you want to look at a generated file for reference, You can find that at `extra/wal` this is in the same format as it will be generated inside `~/.cache/wal`.
 It has been generated using image below ![wall_secondary](https://github.com/niksingh710/gdots/assets/60490474/7e9a9661-6bd5-4aa5-a552-7c793781d2f6)
 
 - **Stow** : Stow is the tool i prefer to manage my dot files (i use `xstow` to be exact but it shouldn't matter).
