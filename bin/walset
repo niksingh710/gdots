@@ -13,7 +13,6 @@ arg="$HOME/.wallpapers"
 [ -n "$1" ] && arg="$1"
 
 wal \
-  --backend haishoku \
   -a 92 \
   --cols16 darken \
   --recursive \

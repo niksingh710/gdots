@@ -137,9 +137,8 @@ bar() {
 }
 
 general() {
-  pgrep -x swww &>/dev/null || swww init &>/dev/null
   check pywalfox && pywalfox update
-  check wal-telegram && wal-telegram --wal -r -g
+  check walogram && walogram -f "$HOME/.cache/wal/colors.sh" -B -i "$current_wallpaper" # fixes for gif
   check pywal-discord && pywal-discord -p "$HOME/.config/vesktop/themes/"
   check tmux && tmux source-file "$HOME/.config/tmux/tmux.conf"
   check hyprctl && hyprctl reload
@@ -175,6 +174,11 @@ notify "After Wal" "Running..."
 . "$HOME/.cache/wal/colors.sh"
 
 current_wallpaper="$(cat $HOME/.cache/wal/wal)"
+file_type=$(file -b --mime-type "$current_wallpaper")
+if [[ "$file_type" == "image/gif" ]]; then
+  convert "$current_wallpaper"[0] "$HOME/.cache/wal.gif.png"
+  current_wallpaper="$HOME/.cache/wal.gif.png"
+fi
 
 checks || notify "Error" "Checks failed"
 blur || notify "Error" "Blur failed"
