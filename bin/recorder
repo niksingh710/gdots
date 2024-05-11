@@ -27,7 +27,7 @@ check slurp || {
 
 dir="$HOME/Videos/Screencapture"
 [ -d "$dir" ] || mkdir -p "$dir"
-filename="$dir/$(date +%Y-%m-%d-%H-%M-%S).mkv"
+filename="$dir/$(date +%Y-%m-%d-%H-%M-%S).mp4"
 
 if pgrep -x wl-screenrec &>/dev/null; then
 	kill -s SIGINT $(pgrep -x wl-screenrec) && notify "wl-screenrec stopped"

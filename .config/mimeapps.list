@@ -1,0 +1,19 @@
+
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop
+applications/pdf=zathura.desktop
+x-scheme-handler/mailspring=Mailspring.desktop
+image/jpg=vimiv.desktop
+images/jpg=vimiv.desktop
+images/jpeg=vimiv.desktop
+image/svg=vimiv.desktop
+images/svg=vimiv.desktop
+images/HEIC=vimiv.desktop
+image/gif=vimiv.desktop
+image/jpx=vimiv.desktop
+image/jp2=vimiv.desktop
+image/png=vimiv.desktop
+image/jpeg=vimiv.desktop
+image/bmp=vimiv.desktop
+image/tiff=vimiv.desktop
+images/heif=vimiv.desktop
