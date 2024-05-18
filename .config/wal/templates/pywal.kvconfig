@@ -44,7 +44,7 @@ combo_as_lineedit=true
 animate_states=true
 button_contents_shift=false
 combo_menu=true
-hide_combo_checkboxes=false
+hide_combo_checkboxes=true
 combo_focus_rect=false
 groupbox_top_label=true
 inline_spin_indicators=true
@@ -216,10 +216,10 @@ min_height=+0.3font
 
 [CheckBox]
 inherits=PanelButtonCommand
-frame=true
+frame=false
 interior.element=checkbox
 text.normal.color={color15}
-text.focus.color={foreground}
+text.focus.color={color15}
 min_width=+0.3font
 min_height=+0.3font
 

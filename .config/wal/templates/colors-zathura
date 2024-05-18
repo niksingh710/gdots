@@ -1,5 +1,5 @@
-set highlight-color             "{foreground}"
-set highlight-active-color      "{cursor}"
+set highlight-color             "rgba({foreground.red},{foreground.green},{foreground.blue}, 0.5)"
+set highlight-active-color      "rgba({cursor.red},{cursor.green},{cursor.blue}, 0.5)"
 
 set default-bg                  "{background}"
 set default-fg                  "{foreground}"
