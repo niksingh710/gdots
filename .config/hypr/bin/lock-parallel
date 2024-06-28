@@ -9,7 +9,7 @@ touch /tmp/locked
   echo "Unlocked at $(date)" | systemd-cat
   pkill -USR1 hyprlock
 ) &
-hyprlock
+hyprlock || :
 rm /tmp/locked
 kill $(jobs -p) &>/dev/null
 pkill fprintd-verify &> /dev/null

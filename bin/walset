@@ -12,7 +12,10 @@ check wal || {
 arg="$HOME/.wallpapers"
 [ -n "$1" ] && arg="$1"
 
+
+# TODO: Fix this and monitor issue: https://github.com/eylles/pywal16/issues/48
 wal \
+  --backend colorthief \
   -a 92 \
   --cols16 darken \
   --recursive \

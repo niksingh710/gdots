@@ -165,6 +165,9 @@ general() {
   if [ -d "$HOME/.config/qt5ct/colors/" ] || mkdir -p "$HOME/.config/qt5ct/colors/"; then
     /usr/bin/cp "$wal_template_dir/qt5ct.conf" "$HOME/.config/qt5ct/colors/pywal.conf"
   fi
+  if [ -d "$HOME/.config/com.github.johnfactotum.Foliate/themes/" ] || mkdir -p "$HOME/.config/com.github.johnfactotum.Foliate/themes/"; then
+    /usr/bin/cp "$wal_template_dir/foliate-pywal.json" "$HOME/.config/com.github.johnfactotum.Foliate/themes/foliate-pywal.json"
+  fi
 
 }
 
